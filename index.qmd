@@ -1,0 +1,7 @@
+---
+page-layout: full
+---
+
+::: column-page
+![](Images/DNA_Quote.jpg)
+:::

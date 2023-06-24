@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Anthony Snead"
+  description: "An Integrative Approach to Evolutionary Biology"
+  navbar:
+    pinned: TRUE
+    tools:
+      - icon: twitter
+        href: "https://twitter.com/AnthonyASnead"
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: about.qmd
+      #- text: "About"
+       # file: about.qmd
+      - text: "CV"
+        file: CV.qmd
+      - text: "Publications"
+        file: Publications.qmd
+      - text: "Outreach"
+
+format:
+  html:
+    theme: theme.scss
+    css: styles.css
+    toc: FALSE
+
+editor: source
+

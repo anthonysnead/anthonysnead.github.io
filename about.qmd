@@ -1,0 +1,31 @@
+---
+title: "Anthony Snead"
+about:
+  template: broadside
+  image-shape: rounded
+  image: Images/Snead_Body_Headshot.jpg
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/AnthonyASnead
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/anthony-snead-0582a8170/
+    - icon: github
+      text: GitHub
+      href: https://github.com/anthonysnead
+    - icon: envelope-at-fill
+      text: Email
+      href: mailto:anthony.snead@nyu.edu
+    - icon: archive-fill
+      text: Curriculum Vitae 
+      file: CV.qmd
+---
+
+I am an ecologist and evolutionary biologist interested in quantifying responses to environmental change across biological scales (Individual → Communities). I am particularly focused on integrating organismal biology, ecological modeling, and molecular ecology to better understand the evolutionary consequences of anthropogenic activities.
+
+I received my Ph.D. in Biology from the [University of Alabama](https://bsc.ua.edu/) with [Ryan Earley](https://rlearley.people.ua.edu/) where I focused on plasticity, species distribution modeling, Bayesian hierarchal modeling, and seascape genetics using a small primarily self-fertilizing killifish (*Kryptolebias marmoratus*) that inhabits the highly fragmented mangrove forests of Central America, the Caribbean, the Bahamas, and Florida. However, I am motivated by the question rather than the taxa with projects utilizing stickleback, the brain-eating amoeba (*Naegleria fowleri*), whales, and more.
+
+As an NSF-funded postdoc, I am working with [Kristin Winchell](https://kmwinchell.com/) at [NYU](https://as.nyu.edu/departments/biology.html) on the impact of urbanization and climate on the microevolution of urban salamanders. Through this work, we aim to combine geometric morphometrics, thermal ecology, and whole genome sequencing to evaluate how anthropogenic activities impact native populations and drive rapid shifts in the distribution of traits and allele frequencies in an environmentally sensitive group.
+
+In my free time, I enjoy trying new things, traveling, and exploring nature. I also play the piano, and I am an avid scuba diver.
