@@ -5,16 +5,16 @@ page-layout: full
 
 ## Peer-Reviewed
 
-X. **Snead AA**, Quackenbush CR, Trojahn S, McDonald A, Lins L, Cornelius C, Adams PE, Ma D, Haag E, Silvestre F, Kanamori A, Earley RL, Kelley JL (202X). Plasticity in Gene Expression in Response to Embryonic Environment. Manuscript draft available – anticipated submission date, April 2023.
+X. **Snead AA**, Quackenbush CR, Trojahn S, McDonald A, Lins L, Cornelius C, Adams PE, Ma D, Haag E, Silvestre F, Kanamori A, Earley RL, Kelley JL (202X). Embryonic thermal environments drive plasticity in gene expression. ***Submitted***: *Proceedings of the Royal Society B: Biological Sciences*
 <br>
 <br>
 X. **Snead AA**, Marson K, Earley RL (202X). Disentangling Associations between abiotic variables, biotic variables and species abundance in the intertidal. ***Under Revision***: *Journal of Animal Ecology*
 <br>
 <br>
-X. **Snead AA**, Tatarenkov A, Avise JC, Taylor DS, Turner BJ, Marson K, Earley RL (202X). Out to sea: Ocean currents and patterns of asymmetric gene flow in an intertidal fish species. ***In Review***: *Frontiers in Genetics*
+6. **Snead AA**, Tatarenkov A, Avise JC, Taylor DS, Turner BJ, Marson K, Earley RL (2023). Out to sea: Ocean currents and patterns of asymmetric gene flow in an intertidal fish species. *Frontiers in Genetics* 14 ([doi: 10.3389/fgene.2023.1206543](https://www.frontiersin.org/articles/10.3389/fgene.2023.1206543/abstract)). ([Code](https://github.com/anthonysnead/Rivulus_Ocean_Current_Gene_Flow_2023))
 <br>
 <br>
-5. Clark RD, Fitz KS, Garcia E, Jaynes KE, Reid BN, Sawkins A, **Snead AA**, Whalen J, Pinsky ML (2023) The Practice and Promise of Temporal Genomics for Measuring Evolutionary Responses to Global Change. *Molecular Ecology Resources* ***In Press*** ([doi: 10.1111/1755-0998.13789](https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.13789)). ([Code](https://github.com/TempGenomics-RCN/StateofField_Analyses))
+5. Clark RD, Fitz KS, Garcia E, Jaynes KE, Reid BN, Sawkins A, **Snead AA**, Whalen J, Pinsky ML (2023) The Practice and Promise of Temporal Genomics for Measuring Evolutionary Responses to Global Change. *Molecular Ecology Resources* ([doi: 10.1111/1755-0998.13789](https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.13789)). ([Code](https://github.com/TempGenomics-RCN/StateofField_Analyses))
 <br>
 <br>
 4. **Snead AA** & Clark RD (2022). The Biological Hierarchy, Time, and Temporal ‘Omics in Evolutionary Biology: A Perspective. *Integrative & Comparative Biology* 62(6), 1872-1886 ([doi: 10.1093/icb/icac146](https://academic.oup.com/icb/article/62/6/1771/6698718)).
@@ -35,3 +35,7 @@ X. **Snead AA**, Tatarenkov A, Avise JC, Taylor DS, Turner BJ, Marson K, Earley 
 
 1. Schmelzer H. 2022. Microevolution can guide conservation efforts. [NatureVolve](https://www.naturevolve.com/) 11:26-29.
 	* *Interview & Popular Science Article Spotlight*
+
+## General Publications
+
+1. Snead AA. 2023. Networking and Establishing Successful Collaborations. Early Ecologist Section [https://www.esa.org/earlycareer/2023/06/16/networking-and-establishing-successful-collaborations/.](https://www.esa.org/earlycareer/2023/06/16/networking-and-establishing-successful-collaborations/)
