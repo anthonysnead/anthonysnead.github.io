@@ -14,7 +14,7 @@ website:
     search: true
     left:
       - text: "Home"
-        file: about.qmd
+        file: index.qmd
       #- text: "About"
        # file: about.qmd
       - text: "CV"
@@ -22,6 +22,7 @@ website:
       - text: "Publications"
         file: Publications.qmd
       - text: "Outreach"
+        file: Outreach.qmd
 
 format:
   html:
