@@ -15,8 +15,6 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      #- text: "About"
-       # file: about.qmd
       - text: "CV"
         file: CV.qmd
       - text: "Publications"

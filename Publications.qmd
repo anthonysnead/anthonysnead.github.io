@@ -5,10 +5,10 @@ page-layout: full
 
 ## Peer-Reviewed
 
-X. **Snead AA**, Quackenbush CR, Trojahn S, McDonald A, Lins L, Cornelius C, Adams PE, Ma D, Haag E, Silvestre F, Kanamori A, Earley RL, Kelley JL (202X). Embryonic thermal environments drive plasticity in gene expression. ***Submitted***: *Proceedings of the Royal Society B: Biological Sciences*
+X. **Snead AA**, Quackenbush CR, Trojahn S, McDonald A, Lins L, Cornelius C, Adams PE, Ma D, Haag E, Silvestre F, Kanamori A, Earley RL, Kelley JL (202X). Embryonic thermal environments drive plasticity in gene expression. ***In Revision***
 <br>
 <br>
-X. **Snead AA**, Marson K, Earley RL (202X). Disentangling Associations between abiotic variables, biotic variables and species abundance in the intertidal. ***Under Revision***: *Journal of Animal Ecology*
+X. **Snead AA**, Marson K, Earley RL (202X). Disentangling Associations between abiotic variables, biotic variables and species abundance in the intertidal. ***In Revision***
 <br>
 <br>
 6. **Snead AA**, Tatarenkov A, Avise JC, Taylor DS, Turner BJ, Marson K, Earley RL (2023). Out to sea: Ocean currents and patterns of asymmetric gene flow in an intertidal fish species. *Frontiers in Genetics* 14 ([doi: 10.3389/fgene.2023.1206543](https://www.frontiersin.org/articles/10.3389/fgene.2023.1206543/abstract)). ([Code](https://github.com/anthonysnead/Rivulus_Ocean_Current_Gene_Flow_2023))
