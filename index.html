@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let multipleCardCarousel = document.querySelector("#carouselExampleControls");
+    
+    
+        if (window.matchMedia("(min-width: 768px)").matches) {
+          let carousel = new bootstrap.Carousel(multipleCardCarousel, {
+            interval: false, // Disable automatic sliding
+            wrap: false, // Prevent wrapping at the end
+          });
+    
+    
+          let carouselWidth = document.querySelector(".carousel-inner").scrollWidth;
+          let cardWidth = document.querySelector(".carousel-item").offsetWidth;
+          let scrollPosition = 0;
+    
+    
+          document.querySelector("#carouselExampleControls .carousel-control-next").addEventListener("click", function () {
+            if (scrollPosition < carouselWidth - cardWidth * 4) {
+              scrollPosition += cardWidth;
+              document.querySelector("#carouselExampleControls .carousel-inner").scroll({ left: scrollPosition, behavior: 'smooth' });
+            }
+          });
+    
+    
+          document.querySelector("#carouselExampleControls .carousel-control-prev").addEventListener("click", function () {
+            if (scrollPosition > 0) {
+              scrollPosition -= cardWidth;
+              document.querySelector("#carouselExampleControls .carousel-inner").scroll({ left: scrollPosition, behavior: 'smooth' });
+            }
+          });
+        } else {
+          multipleCardCarousel.classList.add("slide");
+        }
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous">
+  </script>
+    <title>Anthony Snead</title>
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Anthony Snead</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="research.html" class="nav-link">Research</a>
+            </li>
+            <li class="nav-item">
+              <a href="publications.html" class="nav-link">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a href="outreach.html" class="nav-link">Outreach</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-2 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>An Integrative Approach to <span class="text-warning"> Evolutionary Ecology </span></h1>
+            <h2 class="lead my-4">
+              "Nothing in Biology Makes Sense Except in the Light of Evolution" <br>
+              - Theodosius Dobzhansky
+            </h2>
+            
+            <a href="research.html" class="btn btn-primary btn-lg">
+              Learn About My Research
+            </a>
+          </div>
+          <img
+            class="img-fluid w-30 mx-4 my-2 d-none d-sm-block"
+            src="img/Logo.svg"
+            alt=""
+            width="350" 
+            height="350"
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Research Overview -->
+<section id="Research Overview" class="p-3"></section>
+    <div class="container">
+      <div class="align-items-center justify-content-between">
+        <div class="col">
+          <h1 class="text-center fw-bold"><u>Overview</u></h1>
+          <h5> My research couples phenotypic and ecological data with various ‘omics technologies to quantify how environmental variation,
+             both natural and anthropogenic, shape the spatial distribution of genetic, phenotypic, and bio- diversity. Hence, my work 
+             integrates controlled lab experiments, quantitative field studies, genomics, and computational biology. I am particularly 
+             interested in understanding how genetic diversity and the genomic architecture of complex phenotypes interact with demography 
+             and selection to alter the rate of phenotypic evolution. While my current focus is on the northern two-lined salamander 
+             (<span class="fst-italic">Eurycea bislineata</span>) and the mangrove rivulus fish (<span class="fst-italic">Kryptolebias mamoratus</span>),
+              I do not restrict myself to any particular taxonomic group, and I have worked on a diversity of organisms (e.g., <span class="fst-italic">Naegleria fowleri</span>,
+              <span class="fst-italic">Gasterosteus aculeatus</span>, <span class="fst-italic">Lycorma delicatula</span>).
+          </h5>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="card">
+                  <div class="img-wrapper"><img src="img/DNA_Computer.jpeg" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Functional Genomics</h5>
+                      <p class="card-text">I incorporate whole genome sequencing and transcriptomics to understand how genetic variation and changes in gene expression impact complex phenotypes. </p>
+                      <a href="research.html#FunctionalGenomics" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="img/Temp_map.jpeg" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Species Distribution Modeling</h5>
+                      <p class="card-text">Using occurrence/count data, I evaluate how abiotic and biotic factors influence occupancy and population size while projecting models onto future climatic scenarios.</p>
+                      <a href="research.html#SpeciesDistributionModeling" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="img/Urban_Evolution.jpeg" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Adaptation Genomics</h5>
+                      <p class="card-text">I use cities as natural experiments to identify genes related to local adaptation and understand genomic architecture  impacts the efficiency of natural selection.</p>
+                      <a href="research.html#AdaptationGenomics" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="img/Climate.svg" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Landscape Genetics</h5>
+                      <p class="card-text">I integrate GIS and physical oceanography to understand how environmental variation impacts the distribution of genetic variation.</p>
+                      <a href="research.html#LandscapeGenetics" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="img/edna.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Environmental DNA</h5>
+                      <p class="card-text">With a combination of laboratory and field experiments, I harness DNA fragments within the environment to both detect species and estimate their relative abundance.</p>
+                      <a href="research.html#eDNA" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
+  <!-- Collaboration -->
+    <section id="Collab" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Interested in Collaborating? <span class="text-warning">Reach out!</span></h2>
+            <p>
+              I am a firm believer that collaborative science is not only the future but essential for the forward progression of science.
+               Some of my most interesting research projects stem from highly interdisciplinary and collaborative teams.
+               If you have a project or research idea that you think I may be able to help with, reach out!
+               I am always open to new ideas and applying my skills to new and interesting questions. 
+            </p>
+            <button type="button" class="bi bi-chevron-right btn-primary" data-bs-toggle="modal" data-bs-target="#popupModal">
+              Contact Me
+          </button>
+          </div>
+          <div class="col-md">
+            <img src="img/Collaboration.svg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- Popup Modal-->
+<div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="popupModalLabel">Contact Me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form id="contact_form" name="contact_form" method="post">
+                  <div class="mb-5">
+                      <label for="email_addr">Email address</label>
+                      <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                          placeholder="name@example.com">
+                  </div>
+                  <div class="mb-5">
+                      <label for="name_input">Name</label>
+                      <input type="text" required maxlength="50" class="form-control" id="name_input" name="name"
+                          placeholder="Name">
+                  </div>
+                  <div class="mb-5">
+                      <label for="subject_input">Subject</label>
+                      <input type="text" required maxlength="50" class="form-control" id="subject_input" name="Subject"
+                          placeholder="Subject">
+                  </div>
+                  <div class="mb-5">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- White Space -->
+<section id="learn" class="p-5 bg-light text-light">
+  <div class="container">
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Made with Bootstrap - <a href="https://github.com/anthonysnead/anthonysnead.github.io" 
+          class="link-primary" target="_blank">
+          See the Code!</a></p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=f0viwx6p&n=n1.ratufa.io"></script>
+
+  </body>
+</html>
