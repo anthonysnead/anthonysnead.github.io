@@ -1,0 +1,38 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+  
+  html {
+    scroll-padding-top: 100px;
+  }
+  
+  
+  * {
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+
+  .image-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .image-collage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  body {
+
+    align-items: center;
+  }
+
+  .table th.text-end,
+  .table td.text-end {
+    font-weight: bold;
+    text-align: end;
+  }

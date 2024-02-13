@@ -1,0 +1,27 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+
+  * {
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+  
+  html {
+    scroll-padding-top: 100px;
+  }
+
+  .custom-accordion .accordion-button {
+    cursor: not-allowed;
+  }
+
+  .custom-accordion .accordion-collapse {
+    display: none;
+  }
+  
+  .custom-accordion .accordion-button::after {
+    /* Hide the default arrow */
+    content: none;
+  }
