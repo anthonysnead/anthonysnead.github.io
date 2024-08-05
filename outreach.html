@@ -20,217 +20,218 @@
     
     <link rel="stylesheet" href="outreach.css" />
 
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-    crossorigin="anonymous">
-  </script>
+    crossorigin="anonymous"></script>
     <title>Anthony Snead</title>
-  </head>
 
- 
+    <style>
+      .image-collage img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
+      .image-collage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .image-collage div {
+        flex: 1 1 calc(33.333% - 20px); /* 3 images per row with a gap */
+      }
+      @media (max-width: 768px) {
+        .image-collage div {
+          flex: 1 1 calc(50% - 10px); /* 2 images per row with a gap on smaller screens */
+        }
+      }
+      @media (max-width: 576px) {
+        .image-collage div {
+          flex: 1 1 100%; /* 1 image per row on extra small screens */
+        }
+      }
+    </style>
+  </head>
 
   <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">Anthony Snead</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Anthony Snead</a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navmenu"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="research.html" class="nav-link">Research</a>
-          </li>
-          <li class="nav-item">
-            <a href="publications.html" class="nav-link">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a href="outreach.html" class="nav-link">Outreach</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container mt-4 align-items-center">
-    <div class="container border border-secondary rounded text-dark p-2 w-50"> 
-    <div class="image-collage">
-      <div>
-        <a href="https://cleardirectionmentoring.org/">
-        <img src="img/CDM+Logo.png" alt="Image 1">
-    </a>
-      </div>
-      <div>
-        <a href="https://rlearley.people.ua.edu/meetabamabiologist.html">
-        <img src="img/MBB.jpg" alt="Image 2">
-    </a>
-      </div>
-      <div>
-        <a href="https://research.ua.edu/our/urca/">
-        <img src="img/URCA.jpg" alt="Image 3">
-    </a>
-      </div>
-      <div>
-        <a href="https://ccbp.ua.edu/stem-showcase/">
-        <img src="img/STEMS.jpg" alt="Image 3">
-    </a>
-      </div>
-      <div>
-        <a href="https://www.skypeascientist.com/">
-        <img src="img/SAS.jpg" alt="Image 3">
-    </a>
-      </div>
-      <div>
-        <a href="https://clas.ucdenver.edu/denversciencefair/">
-        <img src="img/Denver_Science.png" alt="Image 3">
-    </a>
-      </div>
-      <div>
-        <a href="https://diversity.ua.edu/safe-zone/">
-        <img src="img/UASafezone.jpg" alt="Image 3">
-    </a>
-      </div>
-      <div>
-        <a href="https://prescientist.org/">
-        <img src="img/LPS.jpg" alt="Image 3">
-    </a>
-      </div>
-      <div>
-        <a href="https://almnh.museums.ua.edu/event/night-at-the-museum/">
-        <img src="img/UAMNH.jpg" alt="Image 3">
-    </a>
-      </div>
-    </div>
-</div>
-</div>
-
-<div class="container">
-  <h1 class="text-center pt-5"><u>Outreach</u></h1>
-  <div class="row justify-content-center">
-    <div class="col-md-8"> <!-- Adjust the column size based on your preference -->
-      <table class="table">
-        <tbody>
-          <tr>
-            <td scope="col" colspan="2" rowspan="2" class="text-start"><a href="https://cleardirectionmentoring.org/">
-              Clear Direction Mentoring</a> <br>
-            <span style="padding-left: 36px;"><em>Mentor</em></span></td>
-            <td scope="col" colspan="2" class="text-end font-weight-bold">Fall 2023 - Present</td>
-          </tr>
-          <tr>
-
-          </tr>
-          <tr>
-            <td scope="col" colspan="2" rowspan="2" class="text-start"><a href="https://clas.ucdenver.edu/denversciencefair/">Denver Metro 
-              Regional Science & Engineering Fair</a><br>
-            <span style="padding-left: 36px;"><em>Volunteer Judge & Scientific Review Board</em></span></td>
-            <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2022, 2024</td>
-          </tr>
-          <tr>
-            
-          </tr>
-          <tr>
-            <td scope="col" colspan="2" rowspan="2" class="text-start"><a href="https://rlearley.people.ua.edu/meetabamabiologist.html">
-              Meet a Bama Biologist</a><br>
-            <span style="padding-left: 36px;"><em>Scientific Volunteer</em></span></td>
-            <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2021 - Summer 2023</td>
-          </tr>
-          <tr>
-            
-          </tr>
-          <tr>
-            <td scope="col" colspan="2" rowspan="2" class="text-start"><a href="https://research.ua.edu/our/urca/">
-              UA Undergraduate Research & Creative Activity Conference</a><br>
-            <span style="padding-left: 36px;"><em>Volunteer Judge</em></span></td>
-            <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2021, 2022</td>
-          </tr>
-          <tr>
-            
-          </tr>
-          <tr>
-            <td scope="col" colspan="2" rowspan="2" class="text-start"><a href="https://ccbp.ua.edu/stem-showcase/">
-              UA STEM Showcase</a><br>
-            <span style="padding-left: 36px;"><em>Volunteer Judge</em></span></td>
-            <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2021</td>
-          </tr>
-          <tr>
-            
-          </tr>
-          <tr>
-            <td scope="col" colspan="2" rowspan="2" class="text-start"><a href="https://prescientist.org/">Letters to a Pre-Scientist</a><br>
-            <span style="padding-left: 36px;"><em>Scientific Volunteer</em></span></td>
-            <td scope="col" colspan="2" class="text-end font-weight-bold">Fall 2020 - Present</td>
-          </tr>
-          <tr>
-            
-          </tr>
-          <tr>
-            <td scope="col" colspan="2" rowspan="2" class="text-start"><a href="https://diversity.ua.edu/safe-zone/">UA SafeZone</a><br>
-            <span style="padding-left: 36px;"><em>Ally/Trainer</em></span></td>
-            <td scope="col" colspan="2" class="text-end font-weight-bold">Fall 2018 – Summer 2023</td>
-          </tr>
-          <tr>
-            
-          </tr>
-          <tr>
-            <td scope="col" colspan="2" rowspan="2" class="text-start"><a href="https://almnh.museums.ua.edu/event/night-at-the-museum/">
-              The University of Alabama’s Night at the Museum</a><br>
-            <span style="padding-left: 36px;"><em>Volunteer Biology Instructor</em></span></td>
-            <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2019</td>
-          </tr>
-          <tr>
-            
-          </tr>
-          <tr>
-            <td scope="col" colspan="2" rowspan="2" class="text-start"><a href="https://www.skypeascientist.com/">Skype a Scientist</a><br>
-            <span style="padding-left: 36px;"><em>Scientific Volunteer</em></span></td>
-            <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2018 - Present</td>
-          </tr>
-          <tr>
-            
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-        <!-- White Space -->
-<section id="white-space" class="p-5 bg-light text-light">
-    <div class="container">
-      </div>
-    </div>
-  </section>
-  
-      <!-- Footer -->
-      <footer class="p-5 bg-dark text-white text-center position-relative">
-        <div class="container">
-          <p class="lead">Made with Bootstrap - <a href="https://github.com/anthonysnead/anthonysnead.github.io" 
-            class="link-primary" target="_blank">
-            See the Code!</a></p>
-          <a href="#" class="position-absolute bottom-0 end-0 p-5">
-            <i class="bi bi-arrow-up-circle h1"></i>
-          </a>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="research.html" class="nav-link">Research</a>
+            </li>
+            <li class="nav-item">
+              <a href="publications.html" class="nav-link">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a href="outreach.html" class="nav-link">Outreach</a>
+            </li>
+          </ul>
         </div>
-      </footer>
-      </body>
-      </html>
+      </div>
+    </nav>
+
+    <!-- Image Collage Container -->
+    <div class="container mt-4">
+      <div class="container border border-secondary rounded text-dark p-2"> 
+        <div class="image-collage">
+          <div>
+            <a href="https://cleardirectionmentoring.org/">
+              <img src="img/CDM+Logo.png" alt="Image 1">
+            </a>
+          </div>
+          <div>
+            <a href="https://rlearley.people.ua.edu/meetabamabiologist.html">
+              <img src="img/MBB.jpg" alt="Image 2">
+            </a>
+          </div>
+          <div>
+            <a href="https://research.ua.edu/our/urca/">
+              <img src="img/URCA.jpg" alt="Image 3">
+            </a>
+          </div>
+          <div>
+            <a href="https://ccbp.ua.edu/stem-showcase/">
+              <img src="img/STEMS.jpg" alt="Image 4">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.skypeascientist.com/">
+              <img src="img/SAS.jpg" alt="Image 5">
+            </a>
+          </div>
+          <div>
+            <a href="https://clas.ucdenver.edu/denversciencefair/">
+              <img src="img/Denver_Science.png" alt="Image 6">
+            </a>
+          </div>
+          <div>
+            <a href="https://diversity.ua.edu/safe-zone/">
+              <img src="img/UASafezone.jpg" alt="Image 7">
+            </a>
+          </div>
+          <div>
+            <a href="https://prescientist.org/">
+              <img src="img/LPS.jpg" alt="Image 8">
+            </a>
+          </div>
+          <div>
+            <a href="https://almnh.museums.ua.edu/event/night-at-the-museum/">
+              <img src="img/UAMNH.jpg" alt="Image 9">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="text-center pt-5"><u>Outreach</u></h1>
+      <div class="row justify-content-center">
+        <div class="col-md-8"> <!-- Adjust the column size based on your preference -->
+          <table class="table">
+            <tbody>
+              <tr>
+                <td scope="col" colspan="2" rowspan="2" class="text-start">
+                  <a href="https://cleardirectionmentoring.org/">Clear Direction Mentoring</a><br>
+                  <span style="padding-left: 36px;"><em>Mentor</em></span>
+                </td>
+                <td scope="col" colspan="2" class="text-end font-weight-bold">Fall 2023 - Present</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td scope="col" colspan="2" rowspan="2" class="text-start">
+                  <a href="https://clas.ucdenver.edu/denversciencefair/">Denver Metro Regional Science & Engineering Fair</a><br>
+                  <span style="padding-left: 36px;"><em>Volunteer Judge & Scientific Review Board</em></span>
+                </td>
+                <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2022, 2024</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td scope="col" colspan="2" rowspan="2" class="text-start">
+                  <a href="https://rlearley.people.ua.edu/meetabamabiologist.html">Meet a Bama Biologist</a><br>
+                  <span style="padding-left: 36px;"><em>Scientific Volunteer</em></span>
+                </td>
+                <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2021 - Summer 2023</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td scope="col" colspan="2" rowspan="2" class="text-start">
+                  <a href="https://research.ua.edu/our/urca/">UA Undergraduate Research & Creative Activity Conference</a><br>
+                  <span style="padding-left: 36px;"><em>Volunteer Judge</em></span>
+                </td>
+                <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2021, 2022</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td scope="col" colspan="2" rowspan="2" class="text-start">
+                  <a href="https://ccbp.ua.edu/stem-showcase/">UA STEM Showcase</a><br>
+                  <span style="padding-left: 36px;"><em>Volunteer Judge</em></span>
+                </td>
+                <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2021</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td scope="col" colspan="2" rowspan="2" class="text-start">
+                  <a href="https://prescientist.org/">Letters to a Pre-Scientist</a><br>
+                  <span style="padding-left: 36px;"><em>Scientific Volunteer</em></span>
+                </td>
+                <td scope="col" colspan="2" class="text-end font-weight-bold">Fall 2020 - Present</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td scope="col" colspan="2" rowspan="2" class="text-start">
+                  <a href="https://diversity.ua.edu/safe-zone/">UA SafeZone</a><br>
+                  <span style="padding-left: 36px;"><em>Ally/Trainer</em></span>
+                </td>
+                <td scope="col" colspan="2" class="text-end font-weight-bold">Fall 2018 – Summer 2023</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td scope="col" colspan="2" rowspan="2" class="text-start">
+                  <a href="https://almnh.museums.ua.edu/event/night-at-the-museum/">The University of Alabama’s Night at the Museum</a><br>
+                  <span style="padding-left: 36px;"><em>Volunteer Biology Instructor</em></span>
+                </td>
+                <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2019</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td scope="col" colspan="2" rowspan="2" class="text-start">
+                  <a href="https://www.skypeascientist.com/">Skype a Scientist</a><br>
+                  <span style="padding-left: 36px;"><em>Scientific Volunteer</em></span>
+                </td>
+                <td scope="col" colspan="2" class="text-end font-weight-bold">Spring 2018 - Present</td>
+              </tr>
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- White Space -->
+    <section id="white-space" class="p-5 bg-light text-light">
+      <div class="container"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Made with Bootstrap - <a href="https://github.com/anthonysnead/anthonysnead.github.io" class="link-primary" target="_blank">See the Code!</a></p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

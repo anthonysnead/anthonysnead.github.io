@@ -5,6 +5,11 @@ body::before {
   font-family: 'Times New Roman', Times, serif !important;
 }
 
+.list-group-item {
+  word-break: break-all;
+  overflow: hidden;
+}
+
 html {
   scroll-padding-top: 100px;
 }
