@@ -150,18 +150,31 @@
       </div>
     </section>
     
-<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+<!-- Mapbox CSS -->
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
 
-    <script>
-      mapboxgl.accessToken =
-        'pk.eyJ1IjoiYXNuZWFkIiwiYSI6ImNsc2UxYTQ0dTE1eXUya3QwYTFydDYzMXkifQ.lJqYwB-2j4nRC_L4Nb1t0A'
-      var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-73.9956798096553, 40.730160555268114],
-        zoom: 16,
-      })
-    </script>
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<!-- Mapbox JS -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+<!-- Load token from config file -->
+<script src="config.js"></script>
+
+<script>
+  mapboxgl.accessToken = MAPBOX_TOKEN;
+
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-73.9956798096553, 40.730160555268114],
+    zoom: 16
+  });
+
+  new mapboxgl.Marker()
+    .setLngLat([-73.9956798096553, 40.730160555268114])
+    .addTo(map);
+</script>
 
     <!-- White Space -->
 <section id="white-space" class="p-5 bg-light text-light">
