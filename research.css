@@ -68,3 +68,15 @@
 #study-systems .card-title {
   letter-spacing: 0.3px;
 }
+
+/* --- Integrative Framework typography --- */
+
+#research-framework .col-lg-6 p {
+  font-size: 1.2rem;       /* larger than default 1rem */
+  line-height: 1.75;
+}
+
+#research-framework .col-lg-6 p strong {
+  font-size: 1.3rem;       /* emphasize opening statement */
+  display: block;
+}
