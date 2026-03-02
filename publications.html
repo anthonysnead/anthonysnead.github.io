@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,28 +13,32 @@
       crossorigin="anonymous"
     />
 
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- (Kept from your old file; safe even if unused) -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    
+
+    <!-- Your page CSS (updated below) -->
     <link rel="stylesheet" href="publication.css" />
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-    crossorigin="anonymous">
-  </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Anthony Snead</title>
   </head>
 
- 
-
   <body>
-
-    <!-- Navbar -->
+    <!-- Navbar (matches Research) -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
         <a href="index.html" class="navbar-brand">Anthony Snead</a>
@@ -65,947 +71,1258 @@
       </div>
     </nav>
 
-     <!-- Publications -->
-     <div class="container pt-5">
-     <div class="container border border-secondary rounded text-dark p-2">
+    <!-- Page content starts AFTER navbar -->
+    <main class="pt-5">
+      <!-- Header (styled like Research, LEFT aligned) -->
+<section class="container mt-5 mb-4">
+  <div class="d-flex align-items-center">
+    <div class="flex-grow-1" style="height:2px; background-color:#1f1f1f;"></div>
 
-      <!-- Preprints - Commented out for future use
-      <section id="preprints">
-        <div class="container">
-          <h2 class="text-center mb-4"><u>Preprints</u></h2>
-          <div class="accordion accordion-flush" id="preprints">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#pre-1"
-                >
-                <p style="text-indent: -36px; padding-left: 36px;">1. PLACEHOLDER CITATION
-                     <span class="fst-italic">Journal</span> 
-                     (<a href="#" class="link-primary" target="_blank">doi: PLACEHOLDER</a>).
-                     </p>
-                </button>
-              </h2>
-              <div
-                id="pre-1"
-                class="accordion-collapse collapse"
-                data-bs-parent="#preprints"
-              >
-                <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> PLACEHOLDER</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <h1 class="mx-4 mb-0 fw-bold" style="letter-spacing:1px;">
+      Publications
+    </h1>
+
+    <div class="flex-grow-1" style="height:2px; background-color:#1f1f1f;"></div>
+  </div>
+
+        <p class="mt-3 mb-0 text-muted">
+          Peer-reviewed articles, scholarly contributions, and selected writing
+        </p>
       </section>
-      End Preprints -->
-            
-      <section id="publications">
-        <div class="container">
-          <h2 class="text-center mb-4"><u>Publications</u></h2>
-          <div class="accordion accordion-flush" id="publications">
-            <!-- Item 19 - PLACEHOLDER -->
+
+      <!-- CONTENT (no outer border box; matches Research “open” layout) -->
+      <section class="container pb-4">
+        <!-- =========================
+             Peer-Reviewed Articles
+             ========================= -->
+        <section id="publications" class="mb-5">
+          <!-- Section header: LEFT aligned with line across -->
+          <div class="d-flex align-items-center mb-4">
+            <h2 class="mb-0 fw-semibold me-4">Peer-Reviewed Articles</h2>
+            <div
+              class="flex-grow-1"
+              style="height: 1px; background-color: #1f1f1f; opacity: 0.2"
+            ></div>
+          </div>
+
+          <div class="accordion accordion-flush" id="publications-accordion">
+            <!-- Item 19 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-19">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-19"
+                  aria-expanded="false"
+                  aria-controls="pub-19"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">19. Alaasam V, <span style="font-weight:bold">Snead AA</span>, Thonis A, Winchell KM (2026)
-                  Eco-evolutionary dynamics shaping biodiversity in the urban mosaic. <span class="fst-italic">Nature Reviews Biodiversity</span> 
-                     (<a href="https://www.nature.com/articles/s44358-026-00138-0" class="link-primary" target="_blank">doi: 10.1038/s44358-026-00138-0</a>).</p>
+                  <p class="mb-0 pub-cite">
+                    19. Alaasam V, <span style="font-weight: bold">Snead AA</span>, Thonis A, Winchell KM (2026)
+                    Eco-evolutionary dynamics shaping biodiversity in the urban mosaic.
+                    <span class="fst-italic">Nature Reviews Biodiversity</span>
+                    (<span class="pub-links">
+                      <a href="https://www.nature.com/articles/s44358-026-00138-0" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1038/s44358-026-00138-0</a
+                      >
+                    </span>).
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-19"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-19"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Cities were once considered population sinks for many species, but it 
-                      is now clear that they can offer viable and even high-quality animal habitats, and thus have an essential role in maintaining 
-                      global biodiversity. In some ways, cities are island-like habitats connected by human infrastructure, governed by the rules of 
-                      island biogeography. Yet cities are also unique mosaic landscapes with heterogeneity that reflects both the local, natural 
-                      ecosystem and an urban landscape common to cities worldwide. Species-specific evolutionary and ecological histories determine
-                       how species interact with different features of the landscape and thus the patterns of urban colonization and persistence. 
-                       In this Review, we explore how ecological and evolutionary processes play out in the urban mosaic and shape urban species 
-                       assemblages. Accounting for the interplay of complex ecological and evolutionary mechanisms on multiple, hierarchical spatial 
-                       scales will enhance understanding of how urban biodiversity is accumulated and maintained, and enable better management of 
-                       species as cities expand and intensify globally.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Cities were once considered population sinks for many species, but it
+                    is now clear that they can offer viable and even high-quality animal habitats, and thus have an essential role in maintaining
+                    global biodiversity. In some ways, cities are island-like habitats connected by human infrastructure, governed by the rules of
+                    island biogeography. Yet cities are also unique mosaic landscapes with heterogeneity that reflects both the local, natural
+                    ecosystem and an urban landscape common to cities worldwide. Species-specific evolutionary and ecological histories determine
+                    how species interact with different features of the landscape and thus the patterns of urban colonization and persistence.
+                    In this Review, we explore how ecological and evolutionary processes play out in the urban mosaic and shape urban species
+                    assemblages. Accounting for the interplay of complex ecological and evolutionary mechanisms on multiple, hierarchical spatial
+                    scales will enhance understanding of how urban biodiversity is accumulated and maintained, and enable better management of
+                    species as cities expand and intensify globally.
+                  </p>
                 </div>
               </div>
             </div>
-            <!-- Item 18 - PLACEHOLDER -->
+
+            <!-- Item 18 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-18">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-18"
+                  aria-expanded="false"
+                  aria-controls="pub-18"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">18. Fang M, <span style="font-weight:bold">Snead AA</span>, Zhang AY, Munshi-South J, Winchell KM. (2026) 
-                  Cities as evolutionary incubators for the global spread of the spotted lanternfly. <span class="fst-italic">Proceedings of the Royal Society B: Biological Sciences</span> 293(2064) 
-                     (<a href="https://royalsocietypublishing.org/rspb/article/293/2064/20252292/480066" class="link-primary" target="_blank">doi: 10.1098/rspb.2025.2292</a>).
-                    (<a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1136004" class="link-primary" target="_blank">NCBI</a>, <a href="https://zenodo.org/records/16172524" class="link-primary" target="_blank">Code</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    18. Fang M, <span style="font-weight: bold">Snead AA</span>, Zhang AY, Munshi-South J, Winchell KM. (2026)
+                    Cities as evolutionary incubators for the global spread of the spotted lanternfly.
+                    <span class="fst-italic">Proceedings of the Royal Society B: Biological Sciences</span> 293(2064)
+                    (<span class="pub-links">
+                      <a href="https://royalsocietypublishing.org/rspb/article/293/2064/20252292/480066" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1098/rspb.2025.2292</a
+                      >
+                    </span>).
+                    (<span class="pub-links">
+                      <a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1136004" class="link-primary" target="_blank" rel="noopener">NCBI</a>,
+                      <a href="https://zenodo.org/records/16172524" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-18"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-18"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Habitat destruction and invasive species pose two of the greatest global threats to
-                       biodiversity. These factors do not operate in isolation, and nowhere is their interaction more apparent than in urban environments.
-                        Urban organisms rapidly evolve under novel ecological circumstances where they also encounter anthropogenic opportunities for range expansion.
-                         We examine the role of urbanization in the invasive success of the spotted lanternfly, an emerging global pest, during its colonization and 
-                         expansion. We demonstrate that the invasive population in the United States has undergone three sequential bottlenecks, resulting in 
-                         significantly reduced genetic diversity and elevated inbreeding. The success of this invasive population may be partly attributable to 
-                         adaptation in the native range before the invasion. We detect divergence between urban and rural lanternflies in Shanghai, China 
-                         (the invasion origin), in genes related to stress response, metabolism and detoxification pathways. Additionally, we detect genomic 
-                         signatures of selection in the invasive population, suggesting adaptive refinement as the invasion progresses. This study provides 
-                         evidence of adaptive evolution in response to urbanization despite substantial loss of genetic diversity and implicates adaptive 
-                         responses to pesticide application, dietary shifts, and climate in the invasive success of the spotted lanternfly.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Habitat destruction and invasive species pose two of the greatest global threats to
+                    biodiversity. These factors do not operate in isolation, and nowhere is their interaction more apparent than in urban environments.
+                    Urban organisms rapidly evolve under novel ecological circumstances where they also encounter anthropogenic opportunities for range expansion.
+                    We examine the role of urbanization in the invasive success of the spotted lanternfly, an emerging global pest, during its colonization and
+                    expansion. We demonstrate that the invasive population in the United States has undergone three sequential bottlenecks, resulting in
+                    significantly reduced genetic diversity and elevated inbreeding. The success of this invasive population may be partly attributable to
+                    adaptation in the native range before the invasion. We detect divergence between urban and rural lanternflies in Shanghai, China
+                    (the invasion origin), in genes related to stress response, metabolism and detoxification pathways. Additionally, we detect genomic
+                    signatures of selection in the invasive population, suggesting adaptive refinement as the invasion progresses. This study provides
+                    evidence of adaptive evolution in response to urbanization despite substantial loss of genetic diversity and implicates adaptive
+                    responses to pesticide application, dietary shifts, and climate in the invasive success of the spotted lanternfly.
+                  </p>
                 </div>
               </div>
             </div>
-            <!-- Item 17 - PLACEHOLDER -->
+
+            <!-- Item 17 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-17">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-17"
+                  aria-expanded="false"
+                  aria-controls="pub-17"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">17. Cunha Neto IL, <span style="font-weight:bold">Snead AA</span>, Landis JB, Specht CD, Onyenedum JG (2026). 
-                  Ectopic cambia in wisteria vines are associated with the expression of conserved KNOX genes. <span class="fst-italic">Nature Communications</span> 
-                     (<a href="https://www.nature.com/articles/s41467-026-68669-w" class="link-primary" target="_blank">doi: 10.1038/s41467-026-68669-w</a>).
-                    (<a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1135177" class="link-primary" target="_blank">NCBI</a>, <a href="https://github.com/anthonysnead/Fabaceae-Ectopic_Cambia_Transcriptomics" class="link-primary" target="_blank">Code</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    17. Cunha Neto IL, <span style="font-weight: bold">Snead AA</span>, Landis JB, Specht CD, Onyenedum JG (2026).
+                    Ectopic cambia in wisteria vines are associated with the expression of conserved KNOX genes.
+                    <span class="fst-italic">Nature Communications</span>
+                    (<span class="pub-links">
+                      <a href="https://www.nature.com/articles/s41467-026-68669-w" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1038/s41467-026-68669-w</a
+                      >
+                    </span>).
+                    (<span class="pub-links">
+                      <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1135177" class="link-primary" target="_blank" rel="noopener">NCBI</a>,
+                      <a href="https://github.com/anthonysnead/Fabaceae-Ectopic_Cambia_Transcriptomics" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-17"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-17"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Secondary vascular growth is a conserved mechanism that gives rise to vascular 
-                      tissues produced via a single vascular cambium. Molecular mechanisms underlying this process are characterized mainly in model 
-                      species with typical vascular architectures, while the genetics underlying ecologically-important atypical vascular architectures
-                       remain unexplored. We use developmental anatomy, comparative transcriptomics, molecular evolutionary analyses, and heterologous 
-                       gene expression to address this knowledge gap, investigating how multiple ectopic cambia (EC) form in the woody vine Japanese 
-                       wisteria. Anatomical studies show EC in Japanese wisteria arise from cortical parenchyma, and cambium-specific transcriptome 
-                       comparisons reveal that genes acting as regulators of typical cambium development in model species are likewise associated with 
-                       EC development. Gene trees of <span class="fst-italic">KNOX</span> genes suggest that duplication events may contribute to EC formation, including a Fabaceae-specific
-                        duplication of <span class="fst-italic">KNAT2/6</span>, which is detected as being under positive selection. We also demonstrate that <span class="fst-italic">KNOX</span> genes from Japanese 
-                        wisteria show canonical KNOX-like activity in heterologous functional assays, although no vascular aberrations were observed. 
-                        Overall, these findings provide the first insights into the genetics of EC formation in “natural variants”, advancing our 
-                        understanding of the molecular mechanisms regulating vascular variants in seed plants.
-
-</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Secondary vascular growth is a conserved mechanism that gives rise to vascular
+                    tissues produced via a single vascular cambium. Molecular mechanisms underlying this process are characterized mainly in model
+                    species with typical vascular architectures, while the genetics underlying ecologically-important atypical vascular architectures
+                    remain unexplored. We use developmental anatomy, comparative transcriptomics, molecular evolutionary analyses, and heterologous
+                    gene expression to address this knowledge gap, investigating how multiple ectopic cambia (EC) form in the woody vine Japanese
+                    wisteria. Anatomical studies show EC in Japanese wisteria arise from cortical parenchyma, and cambium-specific transcriptome
+                    comparisons reveal that genes acting as regulators of typical cambium development in model species are likewise associated with
+                    EC development. Gene trees of <span class="fst-italic">KNOX</span> genes suggest that duplication events may contribute to EC formation, including a Fabaceae-specific
+                    duplication of <span class="fst-italic">KNAT2/6</span>, which is detected as being under positive selection. We also demonstrate that <span class="fst-italic">KNOX</span> genes from Japanese
+                    wisteria show canonical KNOX-like activity in heterologous functional assays, although no vascular aberrations were observed.
+                    Overall, these findings provide the first insights into the genetics of EC formation in “natural variants”, advancing our
+                    understanding of the molecular mechanisms regulating vascular variants in seed plants.
+                  </p>
                 </div>
               </div>
             </div>
-            <!-- Item 16 - PLACEHOLDER -->
+
+            <!-- Item 16 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-16">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-16"
+                  aria-expanded="false"
+                  aria-controls="pub-16"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">16. de Greef E, Müller C <span style="font-weight:bold">Snead AA</span>, Rivkin LR, Ferguson SH, Watt CA, Marcoux M, Peterson SD, Garroway CJ (2026)
-                  Identifying areas of potential risk based on future genetic adaptability in there Arctic whale species <span class="fst-italic">The American Naturalist</span> 207(3) 
-                     (<a href="https://www.journals.uchicago.edu/doi/abs/10.1086/738889?journalCode=an" class="link-primary" target="_blank">doi: 10.1086/738889</a>).
-                    (<a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1182041/" class="link-primary" target="_blank">NCBI</a>, <a href="https://zenodo.org/doi/10.5281/zenodo.15437796" class="link-primary" target="_blank">Code</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    16. de Greef E, Müller C <span style="font-weight: bold">Snead AA</span>, Rivkin LR, Ferguson SH, Watt CA, Marcoux M, Peterson SD, Garroway CJ (2026)
+                    Identifying areas of potential risk based on future genetic adaptability in there Arctic whale species
+                    <span class="fst-italic">The American Naturalist</span> 207(3)
+                    (<span class="pub-links">
+                      <a href="https://www.journals.uchicago.edu/doi/abs/10.1086/738889?journalCode=an" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1086/738889</a
+                      >
+                    </span>).
+                    (<span class="pub-links">
+                      <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1182041/" class="link-primary" target="_blank" rel="noopener">NCBI</a>,
+                      <a href="https://zenodo.org/doi/10.5281/zenodo.15437796" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-16"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-16"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Assessments of adaptive genetic diversity across multiple species are necessary for 
-                      improving the efficacy of regional management in the context of climate change. Rapid loss of sea ice and rising water temperatures in
-                       the Arctic Ocean threaten marine species survival. Beluga whales (<span class="fst-italic">Delphinapterus leucas</span>), narwhals (<span class="fst-italic">Monodon monoceros</span>), and bowhead 
-                       whales (<span class="fst-italic">Balaena mysticetus</span>) are endemic Arctic whales adapted to cold-water conditions that depend on sea ice for foraging and 
-                       protection from predators. We forecasted the degree of genetic mismatch these species may experience under future climate change 
-                       scenarios by the next century using Canadian Arctic genomic samples in genotype-environment association models. When examining local 
-                       adaptation to different environmental variables, we found that ice thickness was the strongest environmental predictor for bowhead 
-                       whales, while temperature and chlorophyll concentration, an indicator of primary productivity, carried greater weight for beluga whales
-                        and narwhals. Notably, a higher degree of genetic mismatch for all three species was observed in the Canadian High Arctic and Hudson
-                         Bay, suggesting that whales in these areas may exhibit the greatest maladaptive risk to climate change. This multispecies assessment
-                          of Arctic-adapted whales provides insight into the spatial congruence between three genomic datasets and context for designing 
-                          ecosystem-wide evolutionarily enlightened conservation strategies.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Assessments of adaptive genetic diversity across multiple species are necessary for
+                    improving the efficacy of regional management in the context of climate change. Rapid loss of sea ice and rising water temperatures in
+                    the Arctic Ocean threaten marine species survival. Beluga whales (<span class="fst-italic">Delphinapterus leucas</span>), narwhals (<span class="fst-italic">Monodon monoceros</span>), and bowhead
+                    whales (<span class="fst-italic">Balaena mysticetus</span>) are endemic Arctic whales adapted to cold-water conditions that depend on sea ice for foraging and
+                    protection from predators. We forecasted the degree of genetic mismatch these species may experience under future climate change
+                    scenarios by the next century using Canadian Arctic genomic samples in genotype-environment association models. When examining local
+                    adaptation to different environmental variables, we found that ice thickness was the strongest environmental predictor for bowhead
+                    whales, while temperature and chlorophyll concentration, an indicator of primary productivity, carried greater weight for beluga whales
+                    and narwhals. Notably, a higher degree of genetic mismatch for all three species was observed in the Canadian High Arctic and Hudson
+                    Bay, suggesting that whales in these areas may exhibit the greatest maladaptive risk to climate change. This multispecies assessment
+                    of Arctic-adapted whales provides insight into the spatial congruence between three genomic datasets and context for designing
+                    ecosystem-wide evolutionarily enlightened conservation strategies.
+                  </p>
                 </div>
               </div>
             </div>
-            <!-- Item 15 - PLACEHOLDER -->
+
+            <!-- Item 15 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-15">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-15"
+                  aria-expanded="false"
+                  aria-controls="pub-15"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">15. <span style="font-weight:bold">Snead AA</span>, Lin E, Linsky S, Olson L, Winchell KM (2025)
-                  Conserved Ecological Responses to Novel Urban Stressors <span class="fst-italic">Journal of Biogeography</span> 52(12), e70104 
-                     (<a href="https://onlinelibrary.wiley.com/doi/10.1111/jbi.70104" class="link-primary" target="_blank">doi: 10.111/jbi.70104</a>).
-                    (<a href="https://github.com/anthonysnead/Eurycea_SDM" class="link-primary" target="_blank">Code</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    15. <span style="font-weight: bold">Snead AA</span>, Lin E, Linsky S, Olson L, Winchell KM (2025)
+                    Conserved Ecological Responses to Novel Urban Stressors <span class="fst-italic">Journal of Biogeography</span> 52(12), e70104
+                    (<span class="pub-links">
+                      <a href="https://onlinelibrary.wiley.com/doi/10.1111/jbi.70104" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.111/jbi.70104</a
+                      >
+                    </span>).
+                    (<span class="pub-links">
+                      <a href="https://github.com/anthonysnead/Eurycea_SDM" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-15"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-15"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> <br>
-                      <span style="font-weight:bold">Aim:</span> As anthropogenic activities continue, species are exposed to climate change and rapid urbanisation that alter their distribution; however, the relative contributions of climate and anthropogenic influence on species distribution are unknown for
-                      most species. We use an environmentally sensitive salamander genus (<span class="fst-italic">Eurycea</span>) that occupies urban and forested habitats to test
-                      the relative impotance of temperature-, precipitation- and urbanisation-related variables before placing these results into a phylogenetic context. We aim to test the impact of climate and urbanisation in driving the distribution of the genus while evaluating
-                      patterns of niche conservatism.
-                      <br>
-                      <span style="font-weight:bold">Location:</span> Nearctic.
-                      <br>
-                      <span style="font-weight:bold">Taxon:</span> <span class="fst-italic">Eurycea</span> (Plethodontidae, Lungless Salamanders).
-                      <br>
-                      <span style="font-weight:bold">Methods:</span> We developed MAXENT niche models for 13 <span class="fst-italic">Eurycea</span> species using bioclimatic and urbanisation-related variables. We
-                      assessed the importance of these environmental variables through permutation importance and compared response curves to determine niche overlap. Phylogenetic analyses tested for evolutionary constraints on species responses to environmental factors.
-                      <br>
-                      <span style="font-weight:bold">Results:</span> Climatic variables were the primary drivers of <span class="fst-italic">Eurycea</span> distributions, while urbanisation-related variables had lower
-                      overall importance. Phylogenetic analyses revealed that responses to urbanisation-related factors, specifically impervious surface and human population density, exhibited significant phylogenetic signal, indicating a stronger evolutionary constraint on
-                      responses to urbanisation than to climate. While climatic variables showed limited phylogenetic conservatism, niche overlap
-                      analyses demonstrated that more closely related species had greater similarity in ecological responses to urbanisation than to
-                      climate. Evolutionary history influenced species' ecological tolerances, with some environmental responses more conserved
-                      than expected under Brownian motion.
-                      <br>
-                      <span style="font-weight:bold">Main Conclusions:</span> Our findings highlight the role of evolutionary history in shaping <span class="fst-italic">Eurycea</span> responses to environmental
-                      variation. While climatic factors predominantly influence broadscale distributions, urbanisation-related responses are more evolutionarily conserved across the genus. These results suggest that past evolutionary trajectories may constrain species' capacity to
-                      adapt to novel anthropogenic stressors, underscoring the importance of incorporating phylogenetic perspectives in conservation
-                      strategies for <span class="fst-italic">Eurycea</span> and other evolutionarily constrained taxa.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> <br />
+                    <span style="font-weight: bold">Aim:</span> As anthropogenic activities continue, species are exposed to climate change and rapid urbanisation that alter their distribution; however, the relative contributions of climate and anthropogenic influence on species distribution are unknown for
+                    most species. We use an environmentally sensitive salamander genus (<span class="fst-italic">Eurycea</span>) that occupies urban and forested habitats to test
+                    the relative impotance of temperature-, precipitation- and urbanisation-related variables before placing these results into a phylogenetic context. We aim to test the impact of climate and urbanisation in driving the distribution of the genus while evaluating
+                    patterns of niche conservatism.
+                    <br />
+                    <span style="font-weight: bold">Location:</span> Nearctic.
+                    <br />
+                    <span style="font-weight: bold">Taxon:</span> <span class="fst-italic">Eurycea</span> (Plethodontidae, Lungless Salamanders).
+                    <br />
+                    <span style="font-weight: bold">Methods:</span> We developed MAXENT niche models for 13 <span class="fst-italic">Eurycea</span> species using bioclimatic and urbanisation-related variables. We
+                    assessed the importance of these environmental variables through permutation importance and compared response curves to determine niche overlap. Phylogenetic analyses tested for evolutionary constraints on species responses to environmental factors.
+                    <br />
+                    <span style="font-weight: bold">Results:</span> Climatic variables were the primary drivers of <span class="fst-italic">Eurycea</span> distributions, while urbanisation-related variables had lower
+                    overall importance. Phylogenetic analyses revealed that responses to urbanisation-related factors, specifically impervious surface and human population density, exhibited significant phylogenetic signal, indicating a stronger evolutionary constraint on
+                    responses to urbanisation than to climate. While climatic variables showed limited phylogenetic conservatism, niche overlap
+                    analyses demonstrated that more closely related species had greater similarity in ecological responses to urbanisation than to
+                    climate. Evolutionary history influenced species' ecological tolerances, with some environmental responses more conserved
+                    than expected under Brownian motion.
+                    <br />
+                    <span style="font-weight: bold">Main Conclusions:</span> Our findings highlight the role of evolutionary history in shaping <span class="fst-italic">Eurycea</span> responses to environmental
+                    variation. While climatic factors predominantly influence broadscale distributions, urbanisation-related responses are more evolutionarily conserved across the genus. These results suggest that past evolutionary trajectories may constrain species' capacity to
+                    adapt to novel anthropogenic stressors, underscoring the importance of incorporating phylogenetic perspectives in conservation
+                    strategies for <span class="fst-italic">Eurycea</span> and other evolutionarily constrained taxa.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 14 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-14">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-14"
+                  aria-expanded="false"
+                  aria-controls="pub-14"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">14. <span style="font-weight:bold">Snead AA</span>, Alaasam VJ, Winchell KM (2025). 
-                  Toward a Cross-Disciplinary Understanding of Urban Evolution <span class="fst-italic">Integrative & Comparative Biology</span> icaf117.
-                     (<a href="https://doi.org/10.1093/icb/icaf117" class="link-primary" target="_blank">doi: 10.1093/icb/icaf117</a>).
+                  <p class="mb-0 pub-cite">
+                    14. <span style="font-weight: bold">Snead AA</span>, Alaasam VJ, Winchell KM (2025).
+                    Toward a Cross-Disciplinary Understanding of Urban Evolution <span class="fst-italic">Integrative & Comparative Biology</span> icaf117.
+                    (<span class="pub-links">
+                      <a href="https://doi.org/10.1093/icb/icaf117" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1093/icb/icaf117</a
+                      >
+                    </span>).
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-14"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-14"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Urbanization is reshaping the planet at an unprecedented rate, altering 
-                      landscapes and environmental conditions in ways that impose novel and often intense selective pressures on wildlife. These 
-                      urban ecosystems provide replicated, real-time "natural experiments" for studying evolution from behavioral, physiological, 
-                      morphological, molecular, and computational perspectives. This special issue of Integrative and Comparative Biology brings 
-                      together research that spans these subdisciplines, showcasing how urban environments influence evolutionary processes in diverse
-                       taxa. The collected studies illustrate how urbanization drives phenotypic and genomic divergence, alters trait correlations, and 
-                       reshapes interactions between organisms and their environments. Together, they highlight the importance of cross-disciplinary 
-                       collaboration in understanding the mechanisms and consequences of rapid urban evolution. Urban evolutionary biology remains a 
-                       young but rapidly growing field. As the impacts of anthropogenic activities, pollution, and urban sprawl intensify, there is a 
-                       critical need for integration across biological subfields to predict how organisms will respond. This volume calls for intentional 
-                       collaboration, shared data frameworks, and continued synthesis across disciplines to unlock a deeper understanding of evolutionary 
-                       dynamics in cities—and to leverage urbanization as a powerful lens for studying contemporary evolution.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Urbanization is reshaping the planet at an unprecedented rate, altering
+                    landscapes and environmental conditions in ways that impose novel and often intense selective pressures on wildlife. These
+                    urban ecosystems provide replicated, real-time "natural experiments" for studying evolution from behavioral, physiological,
+                    morphological, molecular, and computational perspectives. This special issue of Integrative and Comparative Biology brings
+                    together research that spans these subdisciplines, showcasing how urban environments influence evolutionary processes in diverse
+                    taxa. The collected studies illustrate how urbanization drives phenotypic and genomic divergence, alters trait correlations, and
+                    reshapes interactions between organisms and their environments. Together, they highlight the importance of cross-disciplinary
+                    collaboration in understanding the mechanisms and consequences of rapid urban evolution. Urban evolutionary biology remains a
+                    young but rapidly growing field. As the impacts of anthropogenic activities, pollution, and urban sprawl intensify, there is a
+                    critical need for integration across biological subfields to predict how organisms will respond. This volume calls for intentional
+                    collaboration, shared data frameworks, and continued synthesis across disciplines to unlock a deeper understanding of evolutionary
+                    dynamics in cities—and to leverage urbanization as a powerful lens for studying contemporary evolution.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 13 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-13">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-13"
+                  aria-expanded="false"
+                  aria-controls="pub-13"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">13. Stahl LM, <span style="font-weight:bold">Snead AA</span>, Olson JB. (2025). 
-                  Predicting <i>Naegleria fowleri</i> Freshwater Habitat Suitability in the United States for the Present-Day and Future using Ecological
-                   Niche Modeling. <span class="fst-italic">Water Research</span> 285: 124018.
-                     (<a href="https://doi.org/10.1016/j.watres.2025.124018" class="link-primary" target="_blank">doi: 10.1016/j.watres.2025.124018</a>). 
-                     (<a href="https://github.com/anthonysnead/Naegleria_fowleri_ENM" class="link-primary" target="_blank">Code</a>)
+                  <p class="mb-0 pub-cite">
+                    13. Stahl LM, <span style="font-weight: bold">Snead AA</span>, Olson JB. (2025).
+                    Predicting <i>Naegleria fowleri</i> Freshwater Habitat Suitability in the United States for the Present-Day and Future using Ecological
+                    Niche Modeling. <span class="fst-italic">Water Research</span> 285: 124018.
+                    (<span class="pub-links">
+                      <a href="https://doi.org/10.1016/j.watres.2025.124018" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1016/j.watres.2025.124018</a
+                      >
+                    </span>).
+                    (<span class="pub-links">
+                      <a href="https://github.com/anthonysnead/Naegleria_fowleri_ENM" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-13"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-13"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Habitat suitability for the freshwater pathogen <i>Naegleria fowleri</i>, 
-                      commonly known as the brain-eating amoebae, was assessed through ecological niche modeling. Using the machine learning algorithm 
-                      Maxent and occurrence data from three datasets, present-day habitat suitability maps for the contiguous United States (US) were 
-                      created, and the averaged models were used to project future habitat suitability for <i>N. fowleri</i> in 2021-2040 and 2041-2060 across 
-                      three shared socioeconomic pathways (SSP1-2.6, SSP2-4.5, SSP5-8.5). The highest percent contributor for averaged present-day models 
-                      was land cover followed by a different temperature-related variable for each dataset (mean diurnal range, isothermality, and mean 
-                      temperature of the coldest quarter). Present-day maps of <i>N. fowleri</i> habitat suitability showed the highest values in the southern 
-                      portion of the US, where hotspots of highly suitable habitat were observed, especially in states such as Florida and Texas. Large 
-                      areas of highly unsuitable habitat were also noted within the US, suggesting that the distribution of <i>N. fowleri</i> is not 
-                      uniform. Habitat suitability predictions also revealed that suitable habitat for <i>N. fowleri</i> varied significantly by watershed and 
-                      state. Future habitat suitability was nuanced, with some areas experiencing increases and others decreases in habitat suitability. 
-                      Although <i>N. fowleri</i> generally persist at elevated water temperatures and primary amoebic meningoencephalitis cases are predicted
-                       to increase in the future due to climate variability, future habitat suitability values decreased across many areas in the US for all 
-                       three datasets, especially in areas that are considered current hotspots. Differences between future and present-day predictions s
-                       howed that increases in habitat suitability for some geographic regions, especially in northern states, suggested a potential 
-                       northward expansion of <i>N. fowleri</i>. Future research should experimentally test associations between environmental variables
-                        and the presence, survival, and proliferation of <i>N. fowleri</i> to further refine ecological niche models for these pathogenic 
-                        amoebae.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Habitat suitability for the freshwater pathogen <i>Naegleria fowleri</i>,
+                    commonly known as the brain-eating amoebae, was assessed through ecological niche modeling. Using the machine learning algorithm
+                    Maxent and occurrence data from three datasets, present-day habitat suitability maps for the contiguous United States (US) were
+                    created, and the averaged models were used to project future habitat suitability for <i>N. fowleri</i> in 2021-2040 and 2041-2060 across
+                    three shared socioeconomic pathways (SSP1-2.6, SSP2-4.5, SSP5-8.5). The highest percent contributor for averaged present-day models
+                    was land cover followed by a different temperature-related variable for each dataset (mean diurnal range, isothermality, and mean
+                    temperature of the coldest quarter). Present-day maps of <i>N. fowleri</i> habitat suitability showed the highest values in the southern
+                    portion of the US, where hotspots of highly suitable habitat were observed, especially in states such as Florida and Texas. Large
+                    areas of highly unsuitable habitat were also noted within the US, suggesting that the distribution of <i>N. fowleri</i> is not
+                    uniform. Habitat suitability predictions also revealed that suitable habitat for <i>N. fowleri</i> varied significantly by watershed and
+                    state. Future habitat suitability was nuanced, with some areas experiencing increases and others decreases in habitat suitability.
+                    Although <i>N. fowleri</i> generally persist at elevated water temperatures and primary amoebic meningoencephalitis cases are predicted
+                    to increase in the future due to climate variability, future habitat suitability values decreased across many areas in the US for all
+                    three datasets, especially in areas that are considered current hotspots. Differences between future and present-day predictions s
+                    howed that increases in habitat suitability for some geographic regions, especially in northern states, suggested a potential
+                    northward expansion of <i>N. fowleri</i>. Future research should experimentally test associations between environmental variables
+                    and the presence, survival, and proliferation of <i>N. fowleri</i> to further refine ecological niche models for these pathogenic
+                    amoebae.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 12 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-12">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-12"
+                  aria-expanded="false"
+                  aria-controls="pub-12"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">12. <span style="font-weight:bold">Snead AA</span>, Quackenbush CR, Trojahn S, McDonald AL,
-                  Lins LSF, Cornelius C, Adams PE, Ma D, Hsu Y, Haag E, Silvestre F, Kanamori A, Early RL, Kelley JL (2025). 
-                  Embryonic thermal environments drive plasticity in gene expression. <span class="fst-italic">Fish Physiology and Biochemistry</span> 51(3): 1-15.
-                     (<a href="https://doi.org/10.1007/s10695-025-01522-x" class="link-primary" target="_blank">doi: 10.1007/s10695-025-01522-x</a>). 
-                     (<a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA401942" class="link-primary" target="_blank">NCBI</a>; 
-                     <a href="https://github.com/anthonysnead/Plastic-Gene-Rivulus" class="link-primary" target="_blank">Code</a>)
+                  <p class="mb-0 pub-cite">
+                    12. <span style="font-weight: bold">Snead AA</span>, Quackenbush CR, Trojahn S, McDonald AL,
+                    Lins LSF, Cornelius C, Adams PE, Ma D, Hsu Y, Haag E, Silvestre F, Kanamori A, Early RL, Kelley JL (2025).
+                    Embryonic thermal environments drive plasticity in gene expression. <span class="fst-italic">Fish Physiology and Biochemistry</span> 51(3): 1-15.
+                    (<span class="pub-links">
+                      <a href="https://doi.org/10.1007/s10695-025-01522-x" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1007/s10695-025-01522-x</a
+                      >
+                    </span>).
+                    (<span class="pub-links">
+                      <a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA401942" class="link-primary" target="_blank" rel="noopener">NCBI</a>;
+                      <a href="https://github.com/anthonysnead/Plastic-Gene-Rivulus" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-12"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-12"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> When embryos experience different environments than their parents, plasticity can
-                       enable the development of alternate phenotypes that confer higher fitness in the new conditions. Temperature-induced plasticity 
-                       could be especially critical for species that inhabit areas with considerable thermal variation. We studied transcriptional variation
-                        in embryos of mangrove rivulus (<i>Kryptolebias marmoratus</i>)—a self-fertilizing hermaphroditic, eurythermal fish that resides in 
-                        notoriously spatiotemporally variable mangrove forests—exposed to different thermal regimes during development. To study 
-                        transcriptional plasticity, we first improved the genome assembly to chromosome length scaffolds (N50 of 28.17 Megabases). 
-                        Whole transcriptome sequencing revealed that both temperature and developmental timing modulated embryonic gene expression.
-                         We found few differences in gene expression between embryos incubated in cold and warm conditions and assessed before the
-                          temperature-sensitive period of development, indicating high resistance to stochastic changes in gene expression early in 
-                          development. Replicate embryos exposed to cold temperatures and sampled after the temperature-sensitive period showed less
-                           variation in gene expression than those sampled before, suggesting canalization of the plastic response. DNA replication/repair,
-                            organelle, and gas transport pathways were upregulated while nervous system development, cell signaling, and cell adhesion were
-                             downregulated in cold-exposed compared to warm-exposed embryos sampled after the temperature-sensitive period. These plastic
-                              shifts in gene expression could have major implications for reorganizing the phenotype (e.g., apoptosis, mitosis) in response 
-                              to environmental changes occurring within a generation.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> When embryos experience different environments than their parents, plasticity can
+                    enable the development of alternate phenotypes that confer higher fitness in the new conditions. Temperature-induced plasticity
+                    could be especially critical for species that inhabit areas with considerable thermal variation. We studied transcriptional variation
+                    in embryos of mangrove rivulus (<i>Kryptolebias marmoratus</i>)—a self-fertilizing hermaphroditic, eurythermal fish that resides in
+                    notoriously spatiotemporally variable mangrove forests—exposed to different thermal regimes during development. To study
+                    transcriptional plasticity, we first improved the genome assembly to chromosome length scaffolds (N50 of 28.17 Megabases).
+                    Whole transcriptome sequencing revealed that both temperature and developmental timing modulated embryonic gene expression.
+                    We found few differences in gene expression between embryos incubated in cold and warm conditions and assessed before the
+                    temperature-sensitive period of development, indicating high resistance to stochastic changes in gene expression early in
+                    development. Replicate embryos exposed to cold temperatures and sampled after the temperature-sensitive period showed less
+                    variation in gene expression than those sampled before, suggesting canalization of the plastic response. DNA replication/repair,
+                    organelle, and gas transport pathways were upregulated while nervous system development, cell signaling, and cell adhesion were
+                    downregulated in cold-exposed compared to warm-exposed embryos sampled after the temperature-sensitive period. These plastic
+                    shifts in gene expression could have major implications for reorganizing the phenotype (e.g., apoptosis, mitosis) in response
+                    to environmental changes occurring within a generation.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 11 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-11">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-11"
+                  aria-expanded="false"
+                  aria-controls="pub-11"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">11. Torres-Sánchez M et al. [including <span style="font-weight:bold">Snead AA</span>]. 
-                  Comparative biology needs de novo transcriptome assemblies: drawing attention towards amphibians. <span class="fst-italic">Amphibia-Reptilia</span> 1: 1-19
-                     (<a href="https://doi.org/10.1163/15685381-bja10232" class="link-primary" target="_blank">doi: 10.1163/15685381-bja10232</a>).
+                  <p class="mb-0 pub-cite">
+                    11. Torres-Sánchez M et al. [including <span style="font-weight: bold">Snead AA</span>].
+                    Comparative biology needs de novo transcriptome assemblies: drawing attention towards amphibians.
+                    <span class="fst-italic">Amphibia-Reptilia</span> 1: 1-19
+                    (<span class="pub-links">
+                      <a href="https://doi.org/10.1163/15685381-bja10232" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1163/15685381-bja10232</a
+                      >
+                    </span>).
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-11"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-11"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> The study of transcriptomics across amphibians opens a window to understand how 
-                      species have adapted to and cope with their environment, diseases, and new challenges. Transcriptomics can accelerate comparative 
-                      studies across the amphibian tree of life because they capture diverse biological information at a fraction of the cost of genomics. 
-                      Currently, 337 amphibians (3.82% of the described species) have transcriptomic data available, and 60 of them (0.68% of the described 
-                      amphibian species) have reconstructed de novo assemblies readily accessible on public repositories. Here, we summarise taxonomic gaps 
-                      for amphibian transcriptomics, highlighting studies that have used these resources in a multi-species comparative framework to uncover 
-                      the genetic variation and gene expression patterns that underlie phenotypes across different aspects of amphibian biology. Given the 
-                      particularities of amphibians, including their complex life cycles, we provide some guidelines to generate reference transcriptomes 
-                      while identifying challenges that researchers might encounter. We explore the developmental and tissue-specific transcriptome divergence 
-                      across the three amphibian orders to aid in identifying suitable target samples for reference transcriptomes (e.g., developmental stages,
-                       brain, kidney, reproductive tissues). Since annotations for amphibians are very limited, we recommend researchers to be critical of 
-                       annotations assigned through homology. We encourage the availability of transcriptome assemblies in public repositories, sparing 
-                       computational efforts and costs to advance multi-species research. Comparative studies should expand taxonomic and ecological breadth 
-                       to unveil the molecular bases of evolution, adaptation, and resilience mechanisms for one of the most imperilled groups of vertebrates.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> The study of transcriptomics across amphibians opens a window to understand how
+                    species have adapted to and cope with their environment, diseases, and new challenges. Transcriptomics can accelerate comparative
+                    studies across the amphibian tree of life because they capture diverse biological information at a fraction of the cost of genomics.
+                    Currently, 337 amphibians (3.82% of the described species) have transcriptomic data available, and 60 of them (0.68% of the described
+                    amphibian species) have reconstructed de novo assemblies readily accessible on public repositories. Here, we summarise taxonomic gaps
+                    for amphibian transcriptomics, highlighting studies that have used these resources in a multi-species comparative framework to uncover
+                    the genetic variation and gene expression patterns that underlie phenotypes across different aspects of amphibian biology. Given the
+                    particularities of amphibians, including their complex life cycles, we provide some guidelines to generate reference transcriptomes
+                    while identifying challenges that researchers might encounter. We explore the developmental and tissue-specific transcriptome divergence
+                    across the three amphibian orders to aid in identifying suitable target samples for reference transcriptomes (e.g., developmental stages,
+                    brain, kidney, reproductive tissues). Since annotations for amphibians are very limited, we recommend researchers to be critical of
+                    annotations assigned through homology. We encourage the availability of transcriptome assemblies in public repositories, sparing
+                    computational efforts and costs to advance multi-species research. Comparative studies should expand taxonomic and ecological breadth
+                    to unveil the molecular bases of evolution, adaptation, and resilience mechanisms for one of the most imperilled groups of vertebrates.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 10 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-10">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-10"
+                  aria-expanded="false"
+                  aria-controls="pub-10"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">10. <span style="font-weight:bold">Snead AA</span>, Meng F, Largotta N, Winchell KM, Levine BA (2025). 
-                  Diploid chromosome-level genome assembly and annotation for <i>Lycorma delicatula</i>. <span class="fst-italic">Scientific Data</span> 12: 579.
-                     (<a href="https://www.nature.com/articles/s41597-025-04854-8" class="link-primary" target="_blank">doi: 10.1038/s41597-025-04854-8</a>).
-                     (<a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_047948215.1/" class="link-primary" target="_blank">NCBI</a>; 
-                     <a href="https://github.com/anthonysnead/SLF-Genome-Assembly" class="link-primary" target="_blank">Code</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    10. <span style="font-weight: bold">Snead AA</span>, Meng F, Largotta N, Winchell KM, Levine BA (2025).
+                    Diploid chromosome-level genome assembly and annotation for <i>Lycorma delicatula</i>.
+                    <span class="fst-italic">Scientific Data</span> 12: 579.
+                    (<span class="pub-links">
+                      <a href="https://www.nature.com/articles/s41597-025-04854-8" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1038/s41597-025-04854-8</a
+                      >
+                    </span>).
+                    (<span class="pub-links">
+                      <a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_047948215.1/" class="link-primary" target="_blank" rel="noopener">NCBI</a>;
+                      <a href="https://github.com/anthonysnead/SLF-Genome-Assembly" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-10"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-10"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> The spotted lanternfly (<i>Lycorma delicatula</i>) is a planthopper species 
-                      (Hemiptera: Fulgoridae) native to China but invasive in South Korea, Japan, and the United States where it is a significant threat
-                       to agriculture. Genomic resources are critical to both management of this species and understanding the genomic characteristics of
-                        successful invaders. We report an annotated, haplotype-phased, chromosome-level genome assembly for the spotted lanternfly using
-                         PacBio long-read sequencing, Hi-C technology, and RNA-seq. The 2.2 Gbp genome comprises 13 chromosomes, and whole genome resequencing
-                          of eighty-two adults indicated chromosome four as the sex chromosome and a corresponding XO sex-determination system. We 
-                          identified over 12,000 protein-coding genes and performed functional annotation, facilitating the identification of candidate 
-                          genes that may hold importance for spotted lanternfly control. The assemblies and annotations were highly complete with over 
-                          96% of BUSCO genes complete regardless of the database (i.e., Eukaryota, Arthropoda, Insecta). This reference-quality genome 
-                          will serve as an important resource for development and optimization of management practices for the spotted lanternfly and 
-                          invasive species genomics as a whole.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> The spotted lanternfly (<i>Lycorma delicatula</i>) is a planthopper species
+                    (Hemiptera: Fulgoridae) native to China but invasive in South Korea, Japan, and the United States where it is a significant threat
+                    to agriculture. Genomic resources are critical to both management of this species and understanding the genomic characteristics of
+                    successful invaders. We report an annotated, haplotype-phased, chromosome-level genome assembly for the spotted lanternfly using
+                    PacBio long-read sequencing, Hi-C technology, and RNA-seq. The 2.2 Gbp genome comprises 13 chromosomes, and whole genome resequencing
+                    of eighty-two adults indicated chromosome four as the sex chromosome and a corresponding XO sex-determination system. We
+                    identified over 12,000 protein-coding genes and performed functional annotation, facilitating the identification of candidate
+                    genes that may hold importance for spotted lanternfly control. The assemblies and annotations were highly complete with over
+                    96% of BUSCO genes complete regardless of the database (i.e., Eukaryota, Arthropoda, Insecta). This reference-quality genome
+                    will serve as an important resource for development and optimization of management practices for the spotted lanternfly and
+                    invasive species genomics as a whole.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 9 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-9">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-9"
+                  aria-expanded="false"
+                  aria-controls="pub-9"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">9. Kosch TA et al. [including <span style="font-weight:bold">Snead AA</span>] (2024). 
-                  The Amphibian Genomics Consortium: advancing genomic and genetic resources for amphibian research and conservation. <span class="fst-italic">BMC Genomics</span> 25(1): 1025
-                     (<a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-024-10899-7" class="link-primary" target="_blank">doi: 10.1186/s12864-024-10899-7</a>).</p>
+                  <p class="mb-0 pub-cite">
+                    9. Kosch TA et al. [including <span style="font-weight: bold">Snead AA</span>] (2024).
+                    The Amphibian Genomics Consortium: advancing genomic and genetic resources for amphibian research and conservation.
+                    <span class="fst-italic">BMC Genomics</span> 25(1): 1025
+                    (<span class="pub-links">
+                      <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-024-10899-7" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1186/s12864-024-10899-7</a
+                      >
+                    </span>).
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-9"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-9"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Amphibians represent a diverse group of tetrapods, marked by deep divergence times 
-                      between their three systematic orders and families. Studying amphibian biology through the genomics lens increases our understanding
-                       of the features of this animal class and that of other terrestrial vertebrates. The need for amphibian genomic resources is more urgent
-                        than ever due to the increasing threats to this group. Amphibians are one of the most imperiled taxonomic groups, with approximately
-                         41% of species threatened with extinction due to habitat loss, changes in land use patterns, disease, climate change, and their 
-                         synergistic effects. Amphibian genomic resources have provided a better understanding of ontogenetic diversity, tissue regeneration,
-                          diverse life history and reproductive modes, anti-predator strategies, and resilience and adaptive responses. They also serve as 
-                          essential models for studying broad genomic traits, such as evolutionary genome expansions and contractions, as they exhibit the 
-                          widest range of genome sizes among all animal taxa and possess multiple mechanisms of genetic sex determination. Despite these 
-                          features, genome sequencing of amphibians has significantly lagged behind that of other vertebrates, primarily due to the challenges
-                           of assembling their large, repeat-rich genomes and the relative lack of societal support. The emergence of long-read sequencing 
-                           technologies, combined with advanced molecular and computational techniques that improve scaffolding and reduce computational 
-                           workloads, is now making it possible to address some of these challenges. To promote and accelerate the production and use of 
-                           amphibian genomics research through international coordination and collaboration, we launched the Amphibian Genomics Consortium
-                            (AGC, https://mvs.unimelb.edu.au/amphibian-genomics-consortium) in early 2023. This burgeoning community already has more than 
-                            282 members from 41 countries. The AGC aims to leverage the diverse capabilities of its members to advance genomic resources 
-                            for amphibians and bridge the implementation gap between biologists, bioinformaticians, and conservation practitioners. Here 
-                            we evaluate the state of the field of amphibian genomics, highlight previous studies, present challenges to overcome, and call
-                             on the research and conservation communities to unite as part of the AGC to enable amphibian genomics research to "leap" to 
-                             the next level.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Amphibians represent a diverse group of tetrapods, marked by deep divergence times
+                    between their three systematic orders and families. Studying amphibian biology through the genomics lens increases our understanding
+                    of the features of this animal class and that of other terrestrial vertebrates. The need for amphibian genomic resources is more urgent
+                    than ever due to the increasing threats to this group. Amphibians are one of the most imperiled taxonomic groups, with approximately
+                    41% of species threatened with extinction due to habitat loss, changes in land use patterns, disease, climate change, and their
+                    synergistic effects. Amphibian genomic resources have provided a better understanding of ontogenetic diversity, tissue regeneration,
+                    diverse life history and reproductive modes, anti-predator strategies, and resilience and adaptive responses. They also serve as
+                    essential models for studying broad genomic traits, such as evolutionary genome expansions and contractions, as they exhibit the
+                    widest range of genome sizes among all animal taxa and possess multiple mechanisms of genetic sex determination. Despite these
+                    features, genome sequencing of amphibians has significantly lagged behind that of other vertebrates, primarily due to the challenges
+                    of assembling their large, repeat-rich genomes and the relative lack of societal support. The emergence of long-read sequencing
+                    technologies, combined with advanced molecular and computational techniques that improve scaffolding and reduce computational
+                    workloads, is now making it possible to address some of these challenges. To promote and accelerate the production and use of
+                    amphibian genomics research through international coordination and collaboration, we launched the Amphibian Genomics Consortium
+                    (AGC, https://mvs.unimelb.edu.au/amphibian-genomics-consortium) in early 2023. This burgeoning community already has more than
+                    282 members from 41 countries. The AGC aims to leverage the diverse capabilities of its members to advance genomic resources
+                    for amphibians and bridge the implementation gap between biologists, bioinformaticians, and conservation practitioners. Here
+                    we evaluate the state of the field of amphibian genomics, highlight previous studies, present challenges to overcome, and call
+                    on the research and conservation communities to unite as part of the AGC to enable amphibian genomics research to "leap" to
+                    the next level.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 8 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-8">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-8"
+                  aria-expanded="false"
+                  aria-controls="pub-8"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">8. Gustafson JA et al. [including <span style="font-weight:bold">Snead AA</span>] (2024). 
-                  High-coverage nanopore sequencing of samples from the 1000 Genomes Project to build a comprehensive catalog of human genetic variation. <span class="fst-italic">Genome Research</span> 34(11): 2061-2073.
-                     (<a href="https://genome.cshlp.org/content/early/2024/10/02/gr.279273.124.abstract" class="link-primary" target="_blank">doi: 10.1101/gr.279273.124</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    8. Gustafson JA et al. [including <span style="font-weight: bold">Snead AA</span>] (2024).
+                    High-coverage nanopore sequencing of samples from the 1000 Genomes Project to build a comprehensive catalog of human genetic variation.
+                    <span class="fst-italic">Genome Research</span> 34(11): 2061-2073.
+                    (<span class="pub-links">
+                      <a href="https://genome.cshlp.org/content/early/2024/10/02/gr.279273.124.abstract" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1101/gr.279273.124</a
+                      >
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-8"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-8"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Fewer than half of individuals with a suspected Mendelian or 
-                      monogenic condition receive a precise molecular diagnosis after comprehensive clinical genetic testing. Improvements
-                       in data quality and costs have heightened interest in using long-read sequencing (LRS) to streamline clinical genomic
-                        testing, but the absence of control datasets for variant filtering and prioritization has made tertiary analysis of
-                         LRS data challenging. To address this, the 1000 Genomes Project ONT Sequencing Consortium aims to generate LRS data 
-                         from at least 800 of the 1000 Genomes Project samples. Our goal is to use LRS to identify a broader spectrum of variation
-                          so we may improve our understanding of normal patterns of human variation. Here, we present data from analysis of the 
-                          first 100 samples, representing all 5 superpopulations and 19 subpopulations. These samples, sequenced to an average depth
-                           of coverage of 37x and sequence read N50 of 54 kbp, have high concordance with previous studies for identifying single 
-                           nucleotide and indel variants outside of homopolymer regions. Using multiple structural variant (SV) callers, we identify
-                            an average of 24,543 high-confidence SVs per genome, including shared and private SVs likely to disrupt gene function as
-                             well as pathogenic expansions within disease-associated repeats that were not detected using short reads. Evaluation of
-                              methylation signatures revealed expected patterns at known imprinted loci, samples with skewed X-inactivation patterns,
-                               and novel differentially methylated regions. All raw sequencing data, processed data, and summary statistics are 
-                               publicly available, providing a valuable resource for the clinical genetics community to discover pathogenic SVs.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Fewer than half of individuals with a suspected Mendelian or
+                    monogenic condition receive a precise molecular diagnosis after comprehensive clinical genetic testing. Improvements
+                    in data quality and costs have heightened interest in using long-read sequencing (LRS) to streamline clinical genomic
+                    testing, but the absence of control datasets for variant filtering and prioritization has made tertiary analysis of
+                    LRS data challenging. To address this, the 1000 Genomes Project ONT Sequencing Consortium aims to generate LRS data
+                    from at least 800 of the 1000 Genomes Project samples. Our goal is to use LRS to identify a broader spectrum of variation
+                    so we may improve our understanding of normal patterns of human variation. Here, we present data from analysis of the
+                    first 100 samples, representing all 5 superpopulations and 19 subpopulations. These samples, sequenced to an average depth
+                    of coverage of 37x and sequence read N50 of 54 kbp, have high concordance with previous studies for identifying single
+                    nucleotide and indel variants outside of homopolymer regions. Using multiple structural variant (SV) callers, we identify
+                    an average of 24,543 high-confidence SVs per genome, including shared and private SVs likely to disrupt gene function as
+                    well as pathogenic expansions within disease-associated repeats that were not detected using short reads. Evaluation of
+                    methylation signatures revealed expected patterns at known imprinted loci, samples with skewed X-inactivation patterns,
+                    and novel differentially methylated regions. All raw sequencing data, processed data, and summary statistics are
+                    publicly available, providing a valuable resource for the clinical genetics community to discover pathogenic SVs.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 7 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-7">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-7"
+                  aria-expanded="false"
+                  aria-controls="pub-7"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">7. <span style="font-weight:bold">Snead AA</span>,
-                    Tatarenkov A, Taylor DS, Marson K, Earley RL (2024). Centrality to the metapopulation is more important for population genetic diversity than habitat area or fragmentation. <span class="fst-italic">Biology Letters</span> 20(7): 20240158
-                     (<a href="https://royalsocietypublishing.org/doi/abs/10.1098/rsbl.2024.0158" class="link-primary" target="_blank">doi: 10.1098/rsbl.2024.0158</a>) 
-                     (<a href="https://github.com/anthonysnead/Rivulus-Genetic-Diversity" class="link-primary" target="_blank">Code</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    7. <span style="font-weight: bold">Snead AA</span>, Tatarenkov A, Taylor DS, Marson K, Earley RL (2024).
+                    Centrality to the metapopulation is more important for population genetic diversity than habitat area or fragmentation.
+                    <span class="fst-italic">Biology Letters</span> 20(7): 20240158
+                    (<span class="pub-links">
+                      <a href="https://royalsocietypublishing.org/doi/abs/10.1098/rsbl.2024.0158" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1098/rsbl.2024.0158</a
+                      >
+                    </span>)
+                    (<span class="pub-links">
+                      <a href="https://github.com/anthonysnead/Rivulus-Genetic-Diversity" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-7"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-7"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Drift and gene flow affect genetic diversity. Given that the strength of
-                       genetic drift increases as population size decreases, management activities have focused on increasing population size 
-                       through preserving habitats to preserve genetic diversity. Few studies have empirically evaluated the impacts of drift 
-                       and gene flow on genetic diversity. (<span class="fst-italic">Kryptolebias marmoratus</span>), henceforth 'rivulus', is a small killifish restricted to 
-                       fragmented New World mangrove forests with gene flow primarily associated with ocean currents. Rivulus form distinct 
-                       populations across patches, making them a well-suited system to test the extent to which habitat area, fragmentation and
-                        connectivity are associated with genetic diversity. Using over 1000 individuals genotyped at 32 microsatellite loci, 
-                        high-resolution landcover data and oceanographic simulations with graph theory, we demonstrate that centrality 
-                        (connectivity) to the metapopulation is more strongly associated with genetic diversity than habitat area or 
-                        fragmentation. By comparing models with and without centrality standardized by the source population's genetic diversity,
-                         our results suggest that metapopulation centrality is critical to genetic diversity regardless of the diversity of 
-                         adjacent populations. While we find evidence that habitat area and fragmentation are related to genetic diversity, 
-                         centrality is always a significant predictor with a larger effect than any measure of habitat configuration.                  dispersal via wind or ocean currents can drive asymmetric gene flow, which influences patterns of genetic
-                   variation and the capacity of populations to evolve in response to environmental change.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Drift and gene flow affect genetic diversity. Given that the strength of
+                    genetic drift increases as population size decreases, management activities have focused on increasing population size
+                    through preserving habitats to preserve genetic diversity. Few studies have empirically evaluated the impacts of drift
+                    and gene flow on genetic diversity. (<span class="fst-italic">Kryptolebias marmoratus</span>), henceforth 'rivulus', is a small killifish restricted to
+                    fragmented New World mangrove forests with gene flow primarily associated with ocean currents. Rivulus form distinct
+                    populations across patches, making them a well-suited system to test the extent to which habitat area, fragmentation and
+                    connectivity are associated with genetic diversity. Using over 1000 individuals genotyped at 32 microsatellite loci,
+                    high-resolution landcover data and oceanographic simulations with graph theory, we demonstrate that centrality
+                    (connectivity) to the metapopulation is more strongly associated with genetic diversity than habitat area or
+                    fragmentation. By comparing models with and without centrality standardized by the source population's genetic diversity,
+                    our results suggest that metapopulation centrality is critical to genetic diversity regardless of the diversity of
+                    adjacent populations. While we find evidence that habitat area and fragmentation are related to genetic diversity,
+                    centrality is always a significant predictor with a larger effect than any measure of habitat configuration. dispersal via wind or ocean currents can drive asymmetric gene flow, which influences patterns of genetic
+                    variation and the capacity of populations to evolve in response to environmental change.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 6 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-6">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-6"
+                  aria-expanded="false"
+                  aria-controls="pub-6"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">6. <span style="font-weight:bold">Snead AA</span>,
-                    Tatarenkov A, Avise JC, Taylor DS, Turner BJ, Marson K, Earley RL (2023). Out to sea: Ocean currents and patterns
-                     of asymmetric gene flow in an intertidal fish species. <span class="fst-italic">Frontiers in Genetics</span> 14: 1206543 
-                     (<a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2023.1206543/full" class="link-primary" target="_blank">doi: 10.3389/fgene.2023.1206543</a>) 
-                     (<a href="https://github.com/anthonysnead/Rivulus_Ocean_Current_Gene_Flow_2023" class="link-primary" target="_blank">Code</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    6. <span style="font-weight: bold">Snead AA</span>, Tatarenkov A, Avise JC, Taylor DS, Turner BJ, Marson K, Earley RL (2023).
+                    Out to sea: Ocean currents and patterns of asymmetric gene flow in an intertidal fish species.
+                    <span class="fst-italic">Frontiers in Genetics</span> 14: 1206543
+                    (<span class="pub-links">
+                      <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2023.1206543/full" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.3389/fgene.2023.1206543</a
+                      >
+                    </span>)
+                    (<span class="pub-links">
+                      <a href="https://github.com/anthonysnead/Rivulus_Ocean_Current_Gene_Flow_2023" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-6"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-6"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Passive dispersal via wind or ocean currents can drive asymmetric gene flow, which influences patterns of genetic
-                   variation and the capacity of populations to evolve in response to environmental change. The mangrove rivulus fish 
-                   (<span class="fst-italic">Kryptolebias marmoratus</span>), hereafter "rivulus," is an intertidal fish species restricted to the highly fragmented New 
-                   World mangrove forests of Central America, the Caribbean, the Bahamas, and Florida. Mangrove patches are biological 
-                   islands with dramatic differences in both abiotic and biotic conditions compared to adjacent habitat. Over 1,000 individual
-                    rivulus across 17 populations throughout its range were genotyped at 32 highly polymorphic microsatellites. Range-wide 
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Passive dispersal via wind or ocean currents can drive asymmetric gene flow, which influences patterns of genetic
+                    variation and the capacity of populations to evolve in response to environmental change. The mangrove rivulus fish
+                    (<span class="fst-italic">Kryptolebias marmoratus</span>), hereafter "rivulus," is an intertidal fish species restricted to the highly fragmented New
+                    World mangrove forests of Central America, the Caribbean, the Bahamas, and Florida. Mangrove patches are biological
+                    islands with dramatic differences in both abiotic and biotic conditions compared to adjacent habitat. Over 1,000 individual
+                    rivulus across 17 populations throughout its range were genotyped at 32 highly polymorphic microsatellites. Range-wide
                     population genetic structure was evaluated with five complementary approaches that found eight distinct population clusters.
-                     However, an analysis of molecular variance indicated significant population genetic structure among regions, populations 
-                     within regions, sampling locations within populations, and individuals within sampling locations, indicating that rivulus 
-                     has both broad- and fine-scale genetic differentiation. Integrating range-wide genetic data with biophysical modeling 
-                     based on 10 years of ocean current data showed that ocean currents and the distance between populations over water drive 
-                     gene flow patterns on broad scales. Directional migration estimates suggested some significant asymmetries in gene flow 
-                     that also were mediated by ocean currents and distance. Specifically, populations in the center of the range (Florida Keys)
-                      were identified as sinks that received migrants (and alleles) from other populations but failed to export individuals. 
-                      These populations thus harbor genetic variation, perhaps even from extirpated populations across the range, but ocean 
-                      currents and complex arrangements of landmasses might prevent the distribution of that genetic variation elsewhere. 
-                      Hence, the inherent asymmetry of ocean currents shown to impact both genetic differentiation and directional migration 
-                      rates may be responsible for the complex distribution of genetic variation across the range and observed patterns of 
-                      metapopulation structure.</p>
+                    However, an analysis of molecular variance indicated significant population genetic structure among regions, populations
+                    within regions, sampling locations within populations, and individuals within sampling locations, indicating that rivulus
+                    has both broad- and fine-scale genetic differentiation. Integrating range-wide genetic data with biophysical modeling
+                    based on 10 years of ocean current data showed that ocean currents and the distance between populations over water drive
+                    gene flow patterns on broad scales. Directional migration estimates suggested some significant asymmetries in gene flow
+                    that also were mediated by ocean currents and distance. Specifically, populations in the center of the range (Florida Keys)
+                    were identified as sinks that received migrants (and alleles) from other populations but failed to export individuals.
+                    These populations thus harbor genetic variation, perhaps even from extirpated populations across the range, but ocean
+                    currents and complex arrangements of landmasses might prevent the distribution of that genetic variation elsewhere.
+                    Hence, the inherent asymmetry of ocean currents shown to impact both genetic differentiation and directional migration
+                    rates may be responsible for the complex distribution of genetic variation across the range and observed patterns of
+                    metapopulation structure.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 5 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-5">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-5"
+                  aria-expanded="false"
+                  aria-controls="pub-5"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">5. Clark RD, Fitz KS, Garcia E, Jaynes KE, Reid BN, Sawkins A, 
-                    <span style="font-weight:bold">Snead AA</span>,
-                    Whalen J, Pinsky ML (2023) The Practice and Promise of Temporal Genomics for Measuring Evolutionary 
-                    Responses to Global Change. <span class="fst-italic">Molecular Ecology Resources</span> 25(5): e13789 
-                     (<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.13789" class="link-primary" target="_blank">doi: 10.1111/1755-0998.13789</a>) 
-                     (<a href="https://github.com/TempGenomics-RCN/StateofField_Analyses" class="link-primary" target="_blank">Code</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    5. Clark RD, Fitz KS, Garcia E, Jaynes KE, Reid BN, Sawkins A,
+                    <span style="font-weight: bold">Snead AA</span>, Whalen J, Pinsky ML (2023)
+                    The Practice and Promise of Temporal Genomics for Measuring Evolutionary Responses to Global Change.
+                    <span class="fst-italic">Molecular Ecology Resources</span> 25(5): e13789
+                    (<span class="pub-links">
+                      <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/1755-0998.13789" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1111/1755-0998.13789</a
+                      >
+                    </span>)
+                    (<span class="pub-links">
+                      <a href="https://github.com/TempGenomics-RCN/StateofField_Analyses" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-5"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-5"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Understanding the evolutionary consequences of anthropogenic change 
-                        is imperative for estimating long-term species resilience. While contemporary genomic data can provide us with 
-                        important insights into recent demographic histories, investigating past change using present genomic data alone 
-                        has limitations. In comparison, temporal genomics studies, defined herein as those that incorporate time series 
-                        genomic data, utilize museum collections and repeated field sampling to directly examine evolutionary change. As 
-                        temporal genomics is applied to more systems, species and questions, best practices can be helpful guides to make 
-                        the most efficient use of limited resources. Here, we conduct a systematic literature review to synthesize the 
-                        effects of temporal genomics methodology on our ability to detect evolutionary changes. We focus on studies 
-                        investigating recent change within the past 200 years, highlighting evolutionary processes that have occurred 
-                        during the past two centuries of accelerated anthropogenic pressure. We first identify the most frequently studied 
-                        taxa, systems, questions and drivers, before highlighting overlooked areas where further temporal genomic studies may 
-                        be particularly enlightening. Then, we provide guidelines for future study and sample designs while identifying key
-                         considerations that may influence statistical and analytical power. Our aim is to provide recommendations to a broad
-                          array of researchers interested in using temporal genomics in their work.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Understanding the evolutionary consequences of anthropogenic change
+                    is imperative for estimating long-term species resilience. While contemporary genomic data can provide us with
+                    important insights into recent demographic histories, investigating past change using present genomic data alone
+                    has limitations. In comparison, temporal genomics studies, defined herein as those that incorporate time series
+                    genomic data, utilize museum collections and repeated field sampling to directly examine evolutionary change. As
+                    temporal genomics is applied to more systems, species and questions, best practices can be helpful guides to make
+                    the most efficient use of limited resources. Here, we conduct a systematic literature review to synthesize the
+                    effects of temporal genomics methodology on our ability to detect evolutionary changes. We focus on studies
+                    investigating recent change within the past 200 years, highlighting evolutionary processes that have occurred
+                    during the past two centuries of accelerated anthropogenic pressure. We first identify the most frequently studied
+                    taxa, systems, questions and drivers, before highlighting overlooked areas where further temporal genomic studies may
+                    be particularly enlightening. Then, we provide guidelines for future study and sample designs while identifying key
+                    considerations that may influence statistical and analytical power. Our aim is to provide recommendations to a broad
+                    array of researchers interested in using temporal genomics in their work.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 4 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-4">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-4"
+                  aria-expanded="false"
+                  aria-controls="pub-4"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">4. <span style="font-weight:bold">Snead AA</span> & Clark RD (2022). The Biological Hierarchy, Time, and Temporal 'Omics in Evolutionary Biology:
-                     A Perspective. <span class="fst-italic">Integrative & Comparative Biology</span> 62(6): 1872-1886 (<a href="https://academic.oup.com/icb/article/62/6/1872/6691691" class="link-primary"
-                      target="_blank">doi: 10.1093/icb/icac138</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    4. <span style="font-weight: bold">Snead AA</span> & Clark RD (2022). The Biological Hierarchy, Time, and Temporal 'Omics in Evolutionary Biology:
+                    A Perspective. <span class="fst-italic">Integrative & Comparative Biology</span> 62(6): 1872-1886
+                    (<span class="pub-links">
+                      <a href="https://academic.oup.com/icb/article/62/6/1872/6691691" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1093/icb/icac138</a
+                      >
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-4"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-4"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Abstract:</span> Sequencing data—genomics, transcriptomics, epigenomics, proteomics,
-                         and metabolomics—have revolutionized biological research, enabling a more detailed study of processes, ranging from 
-                         subcellular to evolutionary, that drive biological organization. These processes, collectively, are responsible for
-                          generating patterns of phenotypic variation and can operate over dramatically different timescales (milliseconds to
-                           billions of years). While researchers often study phenotypic variation at specific levels of biological organization
-                            to isolate processes operating at that particular scale, the varying types of sequence data, or 'omics, can also 
-                            provide complementary inferences to link molecular and phenotypic variation to produce an integrated view of 
-                            evolutionary biology, ranging from molecular pathways to speciation. We briefly describe how 'omics has been used 
-                            across biological levels and then demonstrate the utility of integrating different types of sequencing data across
-                             multiple biological levels within the same study to better understand biological phenomena. However, 
-                             single-time-point studies cannot evaluate the temporal dynamics of these biological processes. Therefore, we put 
-                             forward temporal 'omics as a framework that can better enable researchers to study the temporal dynamics of target
-                              processes. Temporal 'omics is not infallible, as the temporal sampling regime directly impacts inferential
-                               ability. Thus, we also discuss the role the temporal sampling regime plays in deriving inferences about the
-                                environmental conditions driving biological processes and provide examples that demonstrate the impact of the
-                                 sampling regime on biological inference. Finally, we forecast the future of temporal 'omics by highlighting
-                                  current methodological advancements that will enable temporal 'omics to be extended across species and 
-                                  timescales. We extend this discussion to using temporal multi-omics to integrate across the biological 
-                                  hierarchy to evaluate and link the temporal dynamics of processes that generate phenotypic variation.</p>
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Sequencing data—genomics, transcriptomics, epigenomics, proteomics,
+                    and metabolomics—have revolutionized biological research, enabling a more detailed study of processes, ranging from
+                    subcellular to evolutionary, that drive biological organization. These processes, collectively, are responsible for
+                    generating patterns of phenotypic variation and can operate over dramatically different timescales (milliseconds to
+                    billions of years). While researchers often study phenotypic variation at specific levels of biological organization
+                    to isolate processes operating at that particular scale, the varying types of sequence data, or 'omics, can also
+                    provide complementary inferences to link molecular and phenotypic variation to produce an integrated view of
+                    evolutionary biology, ranging from molecular pathways to speciation. We briefly describe how 'omics has been used
+                    across biological levels and then demonstrate the utility of integrating different types of sequencing data across
+                    multiple biological levels within the same study to better understand biological phenomena. However,
+                    single-time-point studies cannot evaluate the temporal dynamics of these biological processes. Therefore, we put
+                    forward temporal 'omics as a framework that can better enable researchers to study the temporal dynamics of target
+                    processes. Temporal 'omics is not infallible, as the temporal sampling regime directly impacts inferential
+                    ability. Thus, we also discuss the role the temporal sampling regime plays in deriving inferences about the
+                    environmental conditions driving biological processes and provide examples that demonstrate the impact of the
+                    sampling regime on biological inference. Finally, we forecast the future of temporal 'omics by highlighting
+                    current methodological advancements that will enable temporal 'omics to be extended across species and
+                    timescales. We extend this discussion to using temporal multi-omics to integrate across the biological
+                    hierarchy to evaluate and link the temporal dynamics of processes that generate phenotypic variation.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 3 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-3">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-3"
+                  aria-expanded="false"
+                  aria-controls="pub-3"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">3. <span style="font-weight:bold">Snead AA</span> & Alda F (2022). Time Series Sequences for Evolutionary Inferences. 
-                    <span class="fst-italic">Integrative & Comparative Biology</span> 62(6): 1872-1886 (<a href="https://academic.oup.com/icb/article/62/6/1771/6698718" class="link-primary"
-                     target="_blank">doi: 10.1093/icb/icac146</a>)</p>
+                  <p class="mb-0 pub-cite">
+                    3. <span style="font-weight: bold">Snead AA</span> & Alda F (2022). Time Series Sequences for Evolutionary Inferences.
+                    <span class="fst-italic">Integrative & Comparative Biology</span> 62(6): 1872-1886
+                    (<span class="pub-links">
+                      <a href="https://academic.oup.com/icb/article/62/6/1771/6698718" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1093/icb/icac146</a
+                      >
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-3"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-3"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Excerpt from Introduction:</span> Natural history collections, advancing methodologies, and lower 
-                        sequencing costs have propelled the field of temporal genomics. The field is diverse, with both applied 
-                        (Wasko et al. 2004; Vega et al. 2017; Kotzé et al. 2019) and fundamental (Bergland et al. 2014; Machugh et al. 2017) 
-                        research focused on short (Kawecki et al. 2012; Lenski et al. 2015; Durland et al. 2021) and long 
-                        (Brunel et al. 2020; Der Sarkissian et al. 2020) timescales. On longer timescales, ancient DNA (aDNA) 
-                        research focuses on processes that act over thousands (Machugh et al. 2017; Yang et al. 2020) to millions 
-                        (van der Valk et al. 2021) of years. Loog et al. (2020) used contemporary and ancient samples of the grey wolf,
-                         Canis lupus, spanning 50,000 years to trace modern wolf ancestry back to an expansion from Beringia 
-                         (the land bridge spanning Asia and North America). On a shorter timescale, Perry et al. (2022), this issue, 
-                         quantify gene expression in brown bears, Ursus arctos, in different tissue types to investigate differences 
-                         in gene isoform expression among seasons of the hibernation cycle. By sampling repeatedly within a year, the 
-                         authors uncovered specific changes in gene expression that relate to hibernation phenotypes, providing insights 
-                         into the molecular mechanisms that regulate complex animal behaviors. Furthermore, temporal methodologies can use
-                          samples across development to better understand changes in gene expression throughout an organism's life. In this 
-                          issue, Oomen et al. (2022) used experimental tanks of Atlantic cod (Gadus morhua) larvae at different temperatures 
-                          and sampled them throughout development to examine the temporal dynamics of gene expression under thermal stress. 
-                          Through this special issue, we aim to highlight the diversity of temporal genomic research while promoting the
-                           extension of time-series methodologies to other "omics" approaches (e.g., metabolomics, proteomics, epigenomics).
-                            This introduction provides a brief overview of the application of temporal genomics to study microevolution, and
-                             its implementation within conservation. We also contextualize the studies within this special issue to inspire 
-                             future research with time-series molecular data.</p>
+                  <p>
+                    <span style="font-weight: bold">Excerpt from Introduction:</span> Natural history collections, advancing methodologies, and lower
+                    sequencing costs have propelled the field of temporal genomics. The field is diverse, with both applied
+                    (Wasko et al. 2004; Vega et al. 2017; Kotzé et al. 2019) and fundamental (Bergland et al. 2014; Machugh et al. 2017)
+                    research focused on short (Kawecki et al. 2012; Lenski et al. 2015; Durland et al. 2021) and long
+                    (Brunel et al. 2020; Der Sarkissian et al. 2020) timescales. On longer timescales, ancient DNA (aDNA)
+                    research focuses on processes that act over thousands (Machugh et al. 2017; Yang et al. 2020) to millions
+                    (van der Valk et al. 2021) of years. Loog et al. (2020) used contemporary and ancient samples of the grey wolf,
+                    Canis lupus, spanning 50,000 years to trace modern wolf ancestry back to an expansion from Beringia
+                    (the land bridge spanning Asia and North America). On a shorter timescale, Perry et al. (2022), this issue,
+                    quantify gene expression in brown bears, Ursus arctos, in different tissue types to investigate differences
+                    in gene isoform expression among seasons of the hibernation cycle. By sampling repeatedly within a year, the
+                    authors uncovered specific changes in gene expression that relate to hibernation phenotypes, providing insights
+                    into the molecular mechanisms that regulate complex animal behaviors. Furthermore, temporal methodologies can use
+                    samples across development to better understand changes in gene expression throughout an organism's life. In this
+                    issue, Oomen et al. (2022) used experimental tanks of Atlantic cod (Gadus morhua) larvae at different temperatures
+                    and sampled them throughout development to examine the temporal dynamics of gene expression under thermal stress.
+                    Through this special issue, we aim to highlight the diversity of temporal genomic research while promoting the
+                    extension of time-series methodologies to other "omics" approaches (e.g., metabolomics, proteomics, epigenomics).
+                    This introduction provides a brief overview of the application of temporal genomics to study microevolution, and
+                    its implementation within conservation. We also contextualize the studies within this special issue to inspire
+                    future research with time-series molecular data.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 2 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-pub-2">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#pub-2"
+                  aria-expanded="false"
+                  aria-controls="pub-2"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">2. <span style="font-weight:bold">Snead AA</span> & Earley RL (2022). 
-                    Predicting the in-Between: Present and future habitat suitability of an intertidal euryhaline fish. 
-                    <span class="fst-italic">Ecological Informatics</span> 68: 101523 (<a href="https://www.sciencedirect.com/science/article/pii/S1574954121003149" class="link-primary"
-                    target="_blank">doi: 10.1016/j.ecoinf.2021.101523</a>). (<a href="https://github.com/anthonysnead/Rivulus-Future-Suitability-Niche-Model" class="link-primary" target="_blank">Code</a>)
+                  <p class="mb-0 pub-cite">
+                    2. <span style="font-weight: bold">Snead AA</span> & Earley RL (2022).
+                    Predicting the in-Between: Present and future habitat suitability of an intertidal euryhaline fish.
+                    <span class="fst-italic">Ecological Informatics</span> 68: 101523
+                    (<span class="pub-links">
+                      <a href="https://www.sciencedirect.com/science/article/pii/S1574954121003149" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1016/j.ecoinf.2021.101523</a
+                      >
+                    </span>).
+                    (<span class="pub-links">
+                      <a href="https://github.com/anthonysnead/Rivulus-Future-Suitability-Niche-Model" class="link-primary" target="_blank" rel="noopener">Code</a>
+                    </span>)
+                  </p>
                 </button>
               </h2>
               <div
                 id="pub-2"
                 class="accordion-collapse collapse"
-                data-bs-parent="#publications"
+                aria-labelledby="heading-pub-2"
+                data-bs-parent="#publications-accordion"
               >
                 <div class="accordion-body">
-                  <span style="font-weight:bold">Abstract:</span> New World mangrove trees are foundation species, and their range is predicted to expand northward with 
-                    climate change. Foundation species are commonly prioritized for conservation, with the goal of preserving the entire 
+                  <p class="mb-0">
+                    <span style="font-weight: bold">Abstract:</span> New World mangrove trees are foundation species, and their range is predicted to expand northward with
+                    climate change. Foundation species are commonly prioritized for conservation, with the goal of preserving the entire
                     community that depends on them. However, no studies have explicitly investigated whether mangrove-dependent species'
-                     ranges will track the northward expansion of New World mangrove forests. We use the mangrove rivulus fish, 
-                     <span class="fst-italic">Kryptolebias marmoratus</span>, to investigate shifts in habitat suitability in response to various climate change 
-                     scenarios (Representative Concentration Pathways 2.6, 4.5, 6.0, and 8.5). Niche models for coastal species focus on 
-                     traditional climatic variables (e.g., precipitation, temperature) even though coastal habitats also are directly
-                      influenced by marine variables (e.g., sea surface salinity). We employ a novel data integration method that combines
-                       marine and climatic variables, and that accounts for model selection uncertainty using model averaging to provide
-                        robust estimates of habitat suitability. Contrary to expectation, suitability of rivulus habitat is predicted to
-                         increase in the south and decrease or remain unchanged in the north across all climate change scenarios. Thus, 
-                         rivulus might experience range contraction, not expansion. Habitat became more suitable with increased salinity
-                          of the saltiest month and precipitation of the driest quarter. In laboratory settings, rivulus have higher survival,
-                           reproductive success, and growth rates in low salinities. This discrepancy suggests that some combination of the 
-                           responses of rivulus and its competitors to environmental change will restrict rivulus to habitats that laboratory
-                            experiments consider suboptimal. Our models suggest that focusing conservation decisions on foundation species
-                             could overestimate habitat availability and resilience of affiliated communities while simultaneously 
-                             underestimating species declines and extinction risks.
+                    ranges will track the northward expansion of New World mangrove forests. We use the mangrove rivulus fish,
+                    <span class="fst-italic">Kryptolebias marmoratus</span>, to investigate shifts in habitat suitability in response to various climate change
+                    scenarios (Representative Concentration Pathways 2.6, 4.5, 6.0, and 8.5). Niche models for coastal species focus on
+                    traditional climatic variables (e.g., precipitation, temperature) even though coastal habitats also are directly
+                    influenced by marine variables (e.g., sea surface salinity). We employ a novel data integration method that combines
+                    marine and climatic variables, and that accounts for model selection uncertainty using model averaging to provide
+                    robust estimates of habitat suitability. Contrary to expectation, suitability of rivulus habitat is predicted to
+                    increase in the south and decrease or remain unchanged in the north across all climate change scenarios. Thus,
+                    rivulus might experience range contraction, not expansion. Habitat became more suitable with increased salinity
+                    of the saltiest month and precipitation of the driest quarter. In laboratory settings, rivulus have higher survival,
+                    reproductive success, and growth rates in low salinities. This discrepancy suggests that some combination of the
+                    responses of rivulus and its competitors to environmental change will restrict rivulus to habitats that laboratory
+                    experiments consider suboptimal. Our models suggest that focusing conservation decisions on foundation species
+                    could overestimate habitat availability and resilience of affiliated communities while simultaneously
+                    underestimating species declines and extinction risks.
+                  </p>
                 </div>
               </div>
             </div>
+
             <!-- Item 1 -->
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#pub-1"
-                  >
-                  <p style="text-indent: -36px; padding-left: 36px;">1. Davidson J, Summerfelt S, Espmark AMO, Mota V, Marancik D, Earley RL, 
-                    <span style="font-weight:bold">Snead AA</span>, Good C (2021). Effects of ozone on post-smolt Atlantic salmon (<span class="fst-italic">Salmo salar</span>) 
-                    performance, health, and maturation in freshwater recirculation aquaculture systems. <span class="fst-italic">Aquaculture</span> 533: 736208
-                     (<a href="https://www.sciencedirect.com/science/article/pii/S0044848620339144" class="link-primary"
-                     target="_blank">doi: 10.1016/j.aquaculture.2020.736208</a>).</p>
-                  </button>
-                </h2>
-                <div
-                  id="pub-1"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#publications"
+              <h2 class="accordion-header" id="heading-pub-1">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#pub-1"
+                  aria-expanded="false"
+                  aria-controls="pub-1"
                 >
-                  <div class="accordion-body">
-                      <p><span style="font-weight:bold">Abstract:</span> Steroid hormones accumulate in recirculation aquaculture 
-                        systems (RAS) and may influence the reproductive physiology of farmed fish. Ozone reduces hormone concentrations
-                         in freshwater RAS used to rear Atlantic salmon, but its effect on reproductive development is unknown.
-                          Accordingly, an 8-month trial was carried out to evaluate the growth, health, and maturation of post-smolt
-                           Atlantic salmon (296 ± 4 g initial weight) reared in six replicated freshwater RAS (9.5 m3 total volume) 
-                           operated with or without ozone (N = 3/treatment). Residual ozone was controlled with an oxidation reduction
-                            potential (ORP) of 300–320 mV, and mean water temperature was maintained at 14.7 °C. Atlantic salmon growth
-                             was generally faster in ozonated RAS. Salmon from RAS with and without ozone weighed 2156 ± 101 and 1810 ± 
-                             15 g, respectively, by the end of the study. Caudal, anal, and pelvic fin damage was greater (P < 0.05) for
-                              salmon in ozonated RAS early in the trial but improved thereafter. No statistical differences in gill, skin,
-                               and skeletal muscle histopathology were observed between treatments at the end of the study. Waterborne 
-                               estradiol, testosterone, and 11-ketotestosterone levels were periodically lower (P < 0.05) in ozonated RAS,
-                                but maturing salmon were more prevalent in these systems. At the end of the trial, percent maturation of
-                                 salmon populations reared in RAS with and without ozone was 63 ± 7 and 48 ± 1%, respectively; however,
-                                  maturity appeared to be related to fish size. Improved water quality was observed in ozonated RAS including
-                                   reduced dissolved copper, iron, and zinc levels, total heterotrophic bacteria counts, and true color, and
-                                    increased ultraviolet transmittance, which may have supported improved Atlantic salmon growth. Overall, 
-                                    ozone did not inhibit the onset or prevalence of Atlantic salmon maturation, but significant improvements
-                                     in water quality and salmon growth performance resulted from its use.</p>
-                  </div>
+                  <p class="mb-0 pub-cite">
+                    1. Davidson J, Summerfelt S, Espmark AMO, Mota V, Marancik D, Earley RL,
+                    <span style="font-weight: bold">Snead AA</span>, Good C (2021). Effects of ozone on post-smolt Atlantic salmon (<span class="fst-italic">Salmo salar</span>)
+                    performance, health, and maturation in freshwater recirculation aquaculture systems. <span class="fst-italic">Aquaculture</span> 533: 736208
+                    (<span class="pub-links">
+                      <a href="https://www.sciencedirect.com/science/article/pii/S0044848620339144" class="link-primary" target="_blank" rel="noopener"
+                        >doi: 10.1016/j.aquaculture.2020.736208</a
+                      >
+                    </span>).
+                  </p>
+                </button>
+              </h2>
+              <div
+                id="pub-1"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-pub-1"
+                data-bs-parent="#publications-accordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <span style="font-weight: bold">Abstract:</span> Steroid hormones accumulate in recirculation aquaculture
+                    systems (RAS) and may influence the reproductive physiology of farmed fish. Ozone reduces hormone concentrations
+                    in freshwater RAS used to rear Atlantic salmon, but its effect on reproductive development is unknown.
+                    Accordingly, an 8-month trial was carried out to evaluate the growth, health, and maturation of post-smolt
+                    Atlantic salmon (296 ± 4 g initial weight) reared in six replicated freshwater RAS (9.5 m3 total volume)
+                    operated with or without ozone (N = 3/treatment). Residual ozone was controlled with an oxidation reduction
+                    potential (ORP) of 300–320 mV, and mean water temperature was maintained at 14.7 °C. Atlantic salmon growth
+                    was generally faster in ozonated RAS. Salmon from RAS with and without ozone weighed 2156 ± 101 and 1810 ±
+                    15 g, respectively, by the end of the study. Caudal, anal, and pelvic fin damage was greater (P < 0.05) for
+                    salmon in ozonated RAS early in the trial but improved thereafter. No statistical differences in gill, skin,
+                    and skeletal muscle histopathology were observed between treatments at the end of the study. Waterborne
+                    estradiol, testosterone, and 11-ketotestosterone levels were periodically lower (P < 0.05) in ozonated RAS,
+                    but maturing salmon were more prevalent in these systems. At the end of the trial, percent maturation of
+                    salmon populations reared in RAS with and without ozone was 63 ± 7 and 48 ± 1%, respectively; however,
+                    maturity appeared to be related to fish size. Improved water quality was observed in ozonated RAS including
+                    reduced dissolved copper, iron, and zinc levels, total heterotrophic bacteria counts, and true color, and
+                    increased ultraviolet transmittance, which may have supported improved Atlantic salmon growth. Overall,
+                    ozone did not inhibit the onset or prevalence of Atlantic salmon maturation, but significant improvements
+                    in water quality and salmon growth performance resulted from its use.
+                  </p>
                 </div>
               </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-           <!-- Special Issues -->
-           <section id="Special-Issues" class="pt-2">
-            <div class="container">
-              <h2 class="text-center mb-4"><u>Special Issues</u></h2>
-              <div class="accordion custom-accordion accordion-flush" id="Special-Issues">
-                <!-- Item 1 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#SI-1"
-                    >
-                    <p style="text-indent: -36px; padding-left: 36px;">1. Organizer/Associate Editor, <span class="fst-italic">Integrative & Comparative Biology</span>, 
-                        2022. Special issue on "Temporal Genomics."</p>
-                    </button>
-                  </h2>
-                  <div
-                    id="SI-1"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#Special-Issues"
-                  >
-                    <div class="accordion-body">
-                  </div>
-                </div>
-              </div>
-        </div>
-          </section>
+        <!-- =========================
+             Special Issues
+             ========================= -->
+        <section id="Special-Issues" class="pt-2 mb-5">
+          <div class="d-flex align-items-center mb-4">
+            <h2 class="mb-0 fw-semibold me-4">Special Issues</h2>
+            <div
+              class="flex-grow-1"
+              style="height: 1px; background-color: #1f1f1f; opacity: 0.2"
+            ></div>
+          </div>
 
-     <!-- Media Coverage -->
-     <section id="Media-Coverage" class="pt-2">
-        <div class="container">
-          <h2 class="text-center mb-4"><u>Media Coverage</u></h2>
-          <div class="accordion accordion-flush" id="Media-Coverage">
-            <!-- Item 1 -->
+          <div class="accordion accordion-flush" id="Special-Issues-accordion">
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-si-1">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#SI-1"
+                  aria-expanded="false"
+                  aria-controls="SI-1"
+                >
+                  <p class="mb-0 pub-cite">
+                    1. Organizer/Associate Editor, <span class="fst-italic">Integrative & Comparative Biology</span>,
+                    2022. Special issue on "Temporal Genomics."
+                  </p>
+                </button>
+              </h2>
+              <div
+                id="SI-1"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-si-1"
+                data-bs-parent="#Special-Issues-accordion"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================
+             Media Coverage
+             ========================= -->
+        <section id="Media-Coverage" class="pt-2 mb-5">
+          <div class="d-flex align-items-center mb-4">
+            <h2 class="mb-0 fw-semibold me-4">Media Coverage</h2>
+            <div
+              class="flex-grow-1"
+              style="height: 1px; background-color: #1f1f1f; opacity: 0.2"
+            ></div>
+          </div>
+
+          <div class="accordion accordion-flush" id="Media-Coverage-accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-media-1">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#Media-1"
+                  aria-expanded="false"
+                  aria-controls="Media-1"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;">1. Schmelzer H. 2022. Microevolution can guide conservation efforts. 
-                    <a href="https://issuu.com/naturevolve" class="link-primary" target="_blank">NatureVolve</a> 11:26-29 <br>
+                  <p class="mb-0 pub-cite">
+                    1. Schmelzer H. 2022. Microevolution can guide conservation efforts.
+                    <span class="pub-links">
+                      <a href="https://issuu.com/naturevolve" class="link-primary" target="_blank" rel="noopener">NatureVolve</a>
+                    </span>
+                    11:26-29 <br />
                     <span class="fst-italic">Interview & Popular Science Article Spotlight</span>
-                </p>
+                  </p>
                 </button>
               </h2>
               <div
                 id="Media-1"
                 class="accordion-collapse collapse"
-                data-bs-parent="#Media-Coverage"
+                aria-labelledby="heading-media-1"
+                data-bs-parent="#Media-Coverage-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Excerpt:</span> The rivulus fish is native to mangrove forests in Florida, the Caribbean, and Central
-                        America. Most individuals in this species are hermaphrodites, allowing them to
-                        reproduce on their own. Because of this quality, and their tolerance to a wide
-                        range of environmental conditions, rivulus is an important species in researching
-                        genetics, ecology, and evolution. One question that studying rivulus helps answer
-                        is how species adjust in harshly changing environmental conditions. Mangrove
-                        forests in which this fish lives are located in saltwater or brackish water in coastal
-                        intertidal zones. The forests experience changing tide levels as well as have general
-                        susceptibility to changing environmental conditions such as salinity, temperature,
-                        and precipitation.</p>
+                  <p>
+                    <span style="font-weight: bold">Excerpt:</span> The rivulus fish is native to mangrove forests in Florida, the Caribbean, and Central
+                    America. Most individuals in this species are hermaphrodites, allowing them to
+                    reproduce on their own. Because of this quality, and their tolerance to a wide
+                    range of environmental conditions, rivulus is an important species in researching
+                    genetics, ecology, and evolution. One question that studying rivulus helps answer
+                    is how species adjust in harshly changing environmental conditions. Mangrove
+                    forests in which this fish lives are located in saltwater or brackish water in coastal
+                    intertidal zones. The forests experience changing tide levels as well as have general
+                    susceptibility to changing environmental conditions such as salinity, temperature,
+                    and precipitation.
+                  </p>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
-    </div>
-      </section>
+        </section>
 
-           <!-- General Publications -->
-     <section id="General-Pubs" class="pt-2">
-        <div class="container">
-          <h2 class="text-center mb-4"><u>General Publications</u></h2>
-          <div class="accordion accordion-flush" id="General-Pubs">
-            <!-- Item 1 -->
+        <!-- =========================
+             General Publications
+             ========================= -->
+        <section id="General-Pubs" class="pt-2 mb-4">
+          <div class="d-flex align-items-center mb-4">
+            <h2 class="mb-0 fw-semibold me-4">General Publications</h2>
+            <div
+              class="flex-grow-1"
+              style="height: 1px; background-color: #1f1f1f; opacity: 0.2"
+            ></div>
+          </div>
+
+          <div class="accordion accordion-flush" id="General-Pubs-accordion">
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header" id="heading-gen-1">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#Gen-1"
+                  aria-expanded="false"
+                  aria-controls="Gen-1"
                 >
-                <p style="text-indent: -36px; padding-left: 36px;"><span style="font-weight:bold">1. Snead AA</span> 2023. Networking and Establishing Successful Collaborations. 
-                    Early Ecologist Section. <a href="https://www.esa.org/earlycareer/2023/06/16/networking-and-establishing-successful-collaborations/" class="link-primary" target="_blank">
-                      https://www.esa.org/earlycareer/2023/06/16/networking-and-establishing-successful-collaborations/</a>.
-                </p>
+                  <p class="mb-0 pub-cite">
+                    <span style="font-weight: bold">1. Snead AA</span> 2023. Networking and Establishing Successful Collaborations.
+                    Early Ecologist Section.
+                    <span class="pub-links">
+                      <a
+                        href="https://www.esa.org/earlycareer/2023/06/16/networking-and-establishing-successful-collaborations/"
+                        class="link-primary"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        https://www.esa.org/earlycareer/2023/06/16/networking-and-establishing-successful-collaborations/
+                      </a>
+                    </span>.
+                  </p>
                 </button>
               </h2>
               <div
                 id="Gen-1"
                 class="accordion-collapse collapse"
-                data-bs-parent="#General-Pubs"
+                aria-labelledby="heading-gen-1"
+                data-bs-parent="#General-Pubs-accordion"
               >
                 <div class="accordion-body">
-                    <p> <span style="font-weight:bold">Excerpt:</span> "Network! Network! Network!"
-                         I can hear the phrase ringing in my ears, and it transports me back to when I was a 
-                         fresh PhD student in my advisor's office. As early career scientists, we have been told 
-                         that networking is important, and I took that to heart. I jumped at every chance to meet 
-                         new people, even when I was already stretched too thin, but why? There are nontangible reasons
-                          like developing interpersonal skills and making good impressions to hopefully aid in future career
-                           transitions. However, there is also a more immediate reason, collaborations. We all know that 
-                           science is collaborative, and strong collaborations can make or break your research. However, 
-                           no one ever tells you how to transition your network into meaningful collaborations. While not 
-                           all relationships are easily expanded into collaborative projects, I have some tips and suggestions,
-                            that I learned the hard way, to grow your relationships into collaborations that, hopefully, you 
-                            maintain throughout your career.</p>
+                  <p>
+                    <span style="font-weight: bold">Excerpt:</span> "Network! Network! Network!"
+                    I can hear the phrase ringing in my ears, and it transports me back to when I was a
+                    fresh PhD student in my advisor's office. As early career scientists, we have been told
+                    that networking is important, and I took that to heart. I jumped at every chance to meet
+                    new people, even when I was already stretched too thin, but why? There are nontangible reasons
+                    like developing interpersonal skills and making good impressions to hopefully aid in future career
+                    transitions. However, there is also a more immediate reason, collaborations. We all know that
+                    science is collaborative, and strong collaborations can make or break your research. However,
+                    no one ever tells you how to transition your network into meaningful collaborations. While not
+                    all relationships are easily expanded into collaborative projects, I have some tips and suggestions,
+                    that I learned the hard way, to grow your relationships into collaborations that, hopefully, you
+                    maintain throughout your career.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          </div>
-    </div>
-</div>
+        </section>
       </section>
-      
 
-    <!-- White Space -->
-<section id="white-space" class="p-5 bg-light text-light">
-  <div class="container">
-    </div>
-  </div>
-</section>
+      <!-- White Space (kept) -->
+      <section id="white-space" class="p-5 bg-light text-light">
+        <div class="container"></div>
+      </section>
 
-    <!-- Footer -->
-    <footer class="p-5 bg-dark text-white text-center position-relative">
-      <div class="container">
-        <p class="lead">Made with Bootstrap - <a href="https://github.com/anthonysnead/anthonysnead.github.io" 
-          class="link-primary" target="_blank">
-          See the Code!</a></p>
-        <a href="#" class="position-absolute bottom-0 end-0 p-5">
-          <i class="bi bi-arrow-up-circle h1"></i>
-        </a>
-      </div>
-    </footer>
-    </body>
-    </html>
+      <!-- Footer -->
+      <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+          <p class="lead">
+            Made with Bootstrap -
+            <a
+              href="https://github.com/anthonysnead/anthonysnead.github.io"
+              class="link-primary"
+              target="_blank"
+              rel="noopener"
+              >See the Code!</a
+            >
+          </p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Make links clickable inside accordion headers -->
+    <script>
+      document.querySelectorAll(".accordion-button a").forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.stopPropagation();
+        });
+      });
+    </script>
+  </body>
+</html>

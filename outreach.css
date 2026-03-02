@@ -1,38 +1,133 @@
+/* Global type */
+* {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+html {
+  scroll-padding-top: 90px;
+}
+
+/* IMPORTANT:
+   Remove the old spacer. This was creating the white gap.
+   (You had body::before height: 60px AND body padding-top.)
+*/
 body::before {
-    display: block;
-    content: '';
-    height: 60px;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  html {
-    scroll-padding-top: 100px;
-  }
-  
-  
-  * {
-    font-family: 'Times New Roman', Times, serif !important;
-  }
+  content: none !important;
+  display: none !important;
+}
 
-  .image-collage {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-  }
+/* Single, clean solution for fixed-top navbar overlap */
+body {
+  padding-top: 74px; /* adjust to 70-80 if your navbar height differs */
+}
 
-  .image-collage img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
 
-  body {
+/* Header (Research-style) */
+.outreach-header {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 
-    align-items: center;
-  }
+.header-line {
+  height: 2px;
+  background-color: #1f1f1f;
+}
 
-  .table th.text-end,
-  .table td.text-end {
-    font-weight: bold;
-    text-align: end;
-  }
+.header-title {
+  letter-spacing: 1px;
+}
+
+.header-subtitle {
+  font-size: 1.05rem;
+}
+
+/* Logo grid */
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers final row */
+  gap: 18px;
+}
+
+.logo-tile {
+  width: 190px;  /* bigger so logos are readable */
+  height: 110px; /* bigger tile */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.logo-tile img {
+  max-width: 100%;
+  max-height: 78px; /* larger image */
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.92;
+  transition: filter 120ms ease, opacity 120ms ease;
+}
+
+.logo-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.10);
+}
+
+.logo-tile:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Cards */
+.outreach-card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+/* subtle accent bar so it’s not bland */
+.outreach-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.outreach-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon pill */
+.outreach-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.06);
+  flex: 0 0 auto;
+}
+
+.outreach-icon i {
+  font-size: 1.25rem;
+}
+
+/* Year badge styling (a little nicer than default) */
+.outreach-year {
+  background: #212529;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}

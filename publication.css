@@ -1,27 +1,61 @@
-body::before {
-    display: block;
-    content: '';
-    height: 60px;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
+/* publication.css (match Research aesthetic) */
 
-  * {
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  html {
-    scroll-padding-top: 100px;
-  }
+* {
+  font-family: "Times New Roman", Times, serif !important;
+}
 
-  .custom-accordion .accordion-button {
-    cursor: not-allowed;
-  }
+html {
+  scroll-padding-top: 100px;
+}
 
-  .custom-accordion .accordion-collapse {
-    display: none;
-  }
-  
-  .custom-accordion .accordion-button::after {
-    /* Hide the default arrow */
-    content: none;
-  }
+/* Give the page a clean “Research-like” feel */
+body {
+  background: #ffffff;
+}
+
+/* Accordion polish */
+.accordion-button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #111;
+  background-color: rgba(31, 31, 31, 0.04);
+  box-shadow: none;
+}
+
+/* Remove harsh default focus ring but keep accessible outline */
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(31, 31, 31, 0.15);
+  border-color: rgba(31, 31, 31, 0.2);
+}
+
+/* Make the citation block look like your original indent but cleaner */
+.pub-cite {
+  text-indent: -36px;
+  padding-left: 36px;
+}
+
+/* Slightly reduce paragraph spacing inside accordion header */
+.accordion-button .pub-cite {
+  line-height: 1.35;
+}
+
+/* Make accordion item separators subtle (Research style uses subtle lines) */
+.accordion-item {
+  border-color: rgba(31, 31, 31, 0.15);
+}
+
+.accordion-body p {
+  margin-bottom: 0;
+}
+
+/* Optional: keep your link look consistent */
+.pub-links a {
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}

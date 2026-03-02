@@ -1,9 +1,4 @@
-body::before {
-    display: block;
-    content: '';
-    height: 60px;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
+
 
   * {
     font-family: 'Times New Roman', Times, serif !important;
@@ -13,8 +8,63 @@ body::before {
     scroll-padding-top: 100px;
   }
   
-  @media (min-width: 768px) {
-    .img-fluid {
-      max-width: 30vw;
-    }
+ @media (min-width: 768px) {
+  #research-framework img {
+    max-width: 85%;
   }
+}
+
+  /* --- Research pillars: align images + add border --- */
+#research-pillars .card-img-top{
+  width: 100%;
+  height: 260px;            /* adjust 220–320 if you want */
+  object-fit: cover;        /* crop without stretching */
+  object-position: center;  /* keep focal point centered */
+  border: 2px solid #2c2c2c;
+}
+
+/* Prevent image border from spilling outside rounded card edges */
+#research-pillars .card{
+  overflow: hidden;
+}
+
+/* Rounded cards */
+#research-pillars .card {
+  border-radius: 16px;
+  overflow: hidden;   /* ensures content follows curve */
+}
+
+/* Fully rounded images */
+#research-pillars .card-img-top {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+
+  border: 2px solid #2c2c2c;
+  border-radius: 16px;   /* all four corners rounded */
+}
+
+#research-framework .lead { font-size: 1.15rem; }
+#research-framework h2,
+#study-systems h2 { letter-spacing: 0.5px; }
+
+/* --- Study systems: match pillar card styling --- */
+#study-systems .card {
+  border-radius: 16px;
+  overflow: hidden; /* clips image border to rounded corners */
+}
+
+#study-systems .card-img-top {
+  width: 100%;
+  height: 260px;            /* match pillars; change if you want shorter */
+  object-fit: cover;
+  object-position: center;
+
+  border: 2px solid #2c2c2c; /* match pillars black border */
+  border-radius: 16px;       /* rounded image corners */
+}
+
+#study-systems .card-title {
+  letter-spacing: 0.3px;
+}
